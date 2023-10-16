@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+#tsparticles {
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade-in {
+    transition: opacity 1.75s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fade-out {
+    opacity: 0;
+    transition: opacity 1.75s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero {
+    background-image: url("./images/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.skill {
+    background-image: url("./images/skill-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.frontend-tool {
+    background-image: url("./images/frontend-tool.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backend-tool {
+    background-image: url("./images/backend-tool.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px)  {
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .description-title, .description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .description-title {
+        font-size: 30px;
+    }
+
+    .tool {
+        width: 100%;
+    }
+
+    .mobile-image {
+        width: 100%;
+    }
 }
