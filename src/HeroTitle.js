@@ -15,12 +15,12 @@ function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="text-6xl font-bold text-gray-500 text-center">
+    <h1 className="hero-title text-7xl font-extrabold text-gray-800 text-center">
       Build{" "}
       <TextTransition
         inline
         springConfig={presets.wobbly}
-        className="text-6xl text-blue-500"
+        className="animation-element text-7xl font-extrabold text-blue-500"
       >
         {TEXTS[index % TEXTS.length]}
       </TextTransition>{" "}

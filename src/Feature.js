@@ -9,9 +9,9 @@ function Feature() {
     <section className="feature flex w-full flex-row justify-center items-center text-slate-100 flex-wrap">
         <div className="flex flex-col justify-center items-center gap-2 w-full p-5">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5">
-                <h3 className="text-blue-500 uppercase font-bold text-sm text-center">Build faster</h3>
-                <h1 className="description-title text-gray-500 font-bold text-5xl text-center">Why should you choose us?</h1>
-                <span className="description text-gray-400 font-medium text-base text-center">We'll list a few key principles to explain why it's worth entrusting your future project to us. Our team has a proven track record of delivering successful projects on time and within budget, and we are committed to providing top-notch expertise and personalized service to ensure your project's success.</span>
+                <h3 className="section-title font-extrabold text-2xl text-center">Build faster</h3>
+                <h1 className="description-title text-gray-800 font-extrabold text-4xl text-center">Why should you choose us?</h1>
+                <span className="description text-gray-400 font-normal text-base text-center">We'll list a few key principles to explain why it's worth entrusting your future project to us. Our team has a proven track record of delivering successful projects on time and within budget, and we are committed to providing top-notch expertise and personalized service to ensure your project's success.</span>
             </div>
             <div className="flex flex-row justify-center items-flex-start gap-4 w-full p-5 flex-wrap">
                 <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5]">

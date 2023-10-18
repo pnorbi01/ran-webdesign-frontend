@@ -12,10 +12,12 @@ function Skill() {
   return (
     <section className="skill flex w-full flex-row justify-center items-center text-slate-100 flex-wrap">
         <div className="flex flex-col justify-center items-center gap-2 w-full p-5">
-            <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5">
-                <h3 className="text-blue-500 uppercase font-bold text-sm text-center">Skills</h3>
-                <h1 className="description-title text-gray-500 font-bold text-5xl text-center">Let us introduce our skills</h1>
-                <span className="description text-gray-400 font-medium text-base text-center">We offer a wide range of skills to meet your specific needs. Our dedicated team is here to assist you in achieving your goals and making your online presence a success.</span>
+            <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
+                <div className="pseudo-element-skill before:content-['2'] absolute p-2 px-4 -top-8 text-white rounded-full font-bold"></div>
+                <div className="skill-pseudo-line before:content-[''] absolute -top-12 h-4 w-0.5 bg-secondary-500"></div>
+                <h3 className="skill-section-title font-extrabold text-2xl text-center">Skills</h3>
+                <h1 className="description-title text-gray-800 font-extrabold text-4xl text-center">Let us introduce our skills</h1>
+                <span className="description text-gray-400 font-normal text-base text-center">We offer a wide range of skills to meet your specific needs. Our dedicated team is here to assist you in achieving your goals and making your online presence a success.</span>
             </div>
             <div className="flex flex-row justify-center items-center gap-4 w-full p-5 flex-wrap">
                 <div className="frontend-tool tool flex flex-col justify-flex-start items-center p-4 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5]">

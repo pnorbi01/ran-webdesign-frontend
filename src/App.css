@@ -39,15 +39,75 @@
     background-size: cover;
 }
 
+.section-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+}
+
+.about-section-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+}
+
+.skill-section-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#7928ca,#ff0080);
+}
+
+.project-section-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#ff4d4d,#f9cb28);
+}
+
+.pseudo-element-about {
+    background: linear-gradient(to right, #007CF0, #00C6F6);
+}
+
+.pseudo-element-skill {
+    background: linear-gradient(to right, #7928ca, #ff0080);
+}
+
+.pseudo-element-project {
+    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+}
+
+.button {
+    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+}
+
+.about-pseudo-line {
+    background: linear-gradient(0deg, #007CF0, #FFF 100%);
+}
+
+.skill-pseudo-line {
+    background: linear-gradient(0deg, #b8005c, #FFF 100%);
+}
+
+.project-pseudo-line {
+    background: linear-gradient(0deg, #ff4d4d, #FFF 100%);
+}
+
 @media only screen and (max-width: 768px)  {
-    .content {
+    .content, .app-descr {
         width: 100%;
         align-items: center;
     }
 
-    .description-title, .description {
+    .description-title, .description, .section-title {
         text-align: center;
         width: 100%;
+    }
+
+    .hero-title, .animation-element {
+        font-size: 40px;
     }
 
     .description-title {

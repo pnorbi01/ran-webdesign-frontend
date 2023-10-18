@@ -35,7 +35,7 @@ function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all">
-            Changelog
+            Projects
           </Link>
         </NavbarItem>
       </NavbarContent>

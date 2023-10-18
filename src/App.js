@@ -4,6 +4,7 @@ import About from "./About";
 import Skill from "./Skill";
 import Feature from "./Feature";
 import Application from "./Application";
+import Project from "./Project";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Skill />
       <Feature />
       <Application />
+      <Project />
     </>
   );
 }
