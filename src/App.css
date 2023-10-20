@@ -39,6 +39,13 @@
     background-size: cover;
 }
 
+.tool-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#7928ca,#ff0080);
+}
+
 .section-title {
     background-clip: text;
     -webkit-background-clip: text;
@@ -67,6 +74,17 @@
     background-image: linear-gradient(90deg,#ff4d4d,#f9cb28);
 }
 
+.contact-section-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, rgba(0, 161, 226, 1), rgba(0, 224, 165, 1));
+}
+
+.contact-container {
+    background: linear-gradient(to right, #007CF0, #00C6F6);
+}
+
 .pseudo-element-about {
     background: linear-gradient(to right, #007CF0, #00C6F6);
 }
@@ -84,7 +102,7 @@
 }
 
 .about-pseudo-line {
-    background: linear-gradient(0deg, #007CF0, #FFF 100%);
+    background: linear-gradient(0deg, #007CF0, #AAD2FF 100%);
 }
 
 .skill-pseudo-line {
@@ -93,6 +111,32 @@
 
 .project-pseudo-line {
     background: linear-gradient(0deg, #ff4d4d, #FFF 100%);
+}
+
+.contact-pseudo-line {
+    background: linear-gradient(0deg, rgba(0, 224, 165, 1), #FFF 100%);
+}
+
+.pseudo-element-contact {
+    background: linear-gradient(0deg, rgba(0, 161, 226, 1), rgba(0, 224, 165, 1) 100%);
+}
+
+.description-title {
+    background: linear-gradient(180deg,rgba(0,0,0,.8),#000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 992px) {
+    .tool {
+        width: 40%;
+    }
+
+    .content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
@@ -115,10 +159,23 @@
     }
 
     .tool {
-        width: 100%;
+        width: 40%;
     }
 
-    .mobile-image {
+    .mobile-image, .contact-image {
         width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tool {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .hero-title, .animation-element {
+        font-size: 35px;
     }
 }

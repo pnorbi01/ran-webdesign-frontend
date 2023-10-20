@@ -5,6 +5,7 @@ import Skill from "./Skill";
 import Feature from "./Feature";
 import Application from "./Application";
 import Project from "./Project";
+import Contact from "./Contact";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Feature />
       <Application />
       <Project />
+      <Contact />
     </>
   );
 }

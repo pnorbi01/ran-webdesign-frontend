@@ -7,11 +7,11 @@ import java from "./images/java.png";
 
 function Project() {
   return (
-    <section className="project flex w-full flex-row justify-center items-center text-slate-100 flex-wrap">
+    <section className="project flex w-full flex-row justify-center items-center mt-20 text-slate-100 flex-wrap">
         <div className="flex flex-col justify-center items-center gap-2 w-full p-3">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
-                <div className="pseudo-element-project before:content-['3'] absolute p-2 px-4 -top-8 text-white rounded-full font-bold"></div>
-                <div className="project-pseudo-line before:content-[''] absolute -top-12 h-4 w-0.5 bg-secondary-500"></div>
+                <div className="pseudo-element-project before:content-['3'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
+                <div className="project-pseudo-line before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-secondary-500"></div>
                 <h3 className="project-section-title font-extrabold text-2xl text-center">Project</h3>
                 <h1 className="description-title text-gray-800 font-extrabold text-4xl text-center">Checkout our projects.</h1>
                 <span className="description text-gray-400 font-normal text-base text-center">Welcome to the exploration of our projects! Currently, we have only one project, but we proudly present it.</span>

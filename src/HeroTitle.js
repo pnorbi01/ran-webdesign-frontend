@@ -15,7 +15,7 @@ function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="hero-title text-7xl font-extrabold text-gray-800 text-center">
+    <h1 className="hero-title text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.8)] to-black text-center">
       Build{" "}
       <TextTransition
         inline
