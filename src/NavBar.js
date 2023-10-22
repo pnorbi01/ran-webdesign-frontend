@@ -11,14 +11,14 @@ function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="backdrop-blur fixed bg-transparent">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="backdrop-blur fixed bg-transparent border-b-1 border-slate-100/50">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-xl text-inherit">RAN</p>
+          <p className="font-extrabold text-xl text-inherit">RAN</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -53,7 +53,7 @@ function NavBar() {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              className="w-full"
+              className="w-full text-grey-500 font-bold"
               href="#"
               size="lg"
             >

@@ -8,7 +8,7 @@ function Application() {
             <div className="content flex flex-col justify-center items-flex-start gap-2 p-5">
                 <h3 className="section-title font-extrabold text-2xl text-left">Mobile application</h3>
                 <h1 className="description-title text-gray-800 font-extrabold text-4xl text-left">Design your custom mobile app with us.</h1>
-                <span className="description text-gray-400 font-normal text-base text-left">When you choose to design your mobile app with us, you're getting a collaborative partner. Partner with us to design and develop your custom mobile app in React Native. Let's turn your vision into a reality!</span>
+                <span className="description text-gray-400 font-normal text-base text-left">When you choose to design your mobile app with us, you're getting a collaborative partner. Partner with us to design and develop your custom mobile app in <span className="description-element">React Native</span>. Let's turn your vision into a reality!</span>
             </div>
         </div>
         <div className="mobile-image flex flex-row justify-end items-center gap-2 w-1/2 p-5">

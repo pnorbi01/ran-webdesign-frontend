@@ -17,7 +17,7 @@ function Project() {
                 <span className="description text-gray-400 font-normal text-base text-center">Welcome to the exploration of our projects! Currently, we have only one project, but we proudly present it.</span>
             </div>
             <div className="flex flex-row justify-center items-center flex-wrap gap-3">
-                <Card isFooterBlurred className="w-[270] h-[300px] col-span-12 sm:col-span-7">
+                <Card isFooterBlurred className="w-[270] h-[300px] col-span-12 sm:col-span-7 shadow-2xl">
                     <CardHeader className="absolute z-10 top-1 flex-col items-start">
                         <p className="text-tiny text-white/60 uppercase font-bold">Used technologies</p>
                         <div className="flex flex-row">

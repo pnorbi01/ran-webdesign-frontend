@@ -18,6 +18,13 @@
     background-size: cover;
 }
 
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: blue;
+  }
+
 .skill {
     background-image: url("./images/skill-bg.png");
     background-position: center;
@@ -78,11 +85,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, rgba(0, 161, 226, 1), rgba(0, 224, 165, 1));
+    background-image: linear-gradient(90deg, #13A151, #91D8BD);
 }
 
 .contact-container {
-    background: linear-gradient(to right, #007CF0, #00C6F6);
+    background: linear-gradient(to right, #13A151, #91D8BD);
 }
 
 .pseudo-element-about {
@@ -114,11 +121,11 @@
 }
 
 .contact-pseudo-line {
-    background: linear-gradient(0deg, rgba(0, 224, 165, 1), #FFF 100%);
+    background: linear-gradient(0deg, #13A151, #FFF 100%);
 }
 
 .pseudo-element-contact {
-    background: linear-gradient(0deg, rgba(0, 161, 226, 1), rgba(0, 224, 165, 1) 100%);
+    background: linear-gradient(to right, #13A151, #91D8BD 100%);
 }
 
 .description-title {
@@ -127,6 +134,47 @@
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+.description-element {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+}
+
+.contact-element:hover .arrowIcon {
+    transform: translateX(5px);
+    font-size: 20px;
+}
+
+.footer {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #FFF, rgb(226 232 240), #fff) 1;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.footer-title {
+    background: linear-gradient(180deg,rgba(0,0,0,.8),#000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.company-element:hover .arrowFooterIcon {
+    transform: translateX(5px);
+}
+
+.footer-contact-element:hover .footerContactIcon {
+    transform: translateX(-5px);
+}
+
+.xIcon:hover {
+    font-size: 23px;
 }
 
 @media only screen and (max-width: 992px) {

@@ -1,6 +1,6 @@
 import React from "react";
-import phone from "./images/phone.png";
-import mail from "./images/mail.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
 
@@ -29,23 +29,26 @@ function Contact() {
                     <span className="description text-gray-400 font-normal text-base text-center">Don't hesitate! Let's make your project even better together.  Whether you have a new project in mind or need improvements to an existing one, we're here to collaborate and bring your vision to life.</span>
                     <span className="description text-gray-400 font-normal text-base text-center">Your satisfaction is our top priority. Contact us today and let's discuss how we can take your project to the next level!</span>
                 </div>
-                <div className="contact-container flex flex-col justify-center items-center w-3/5 rounded-xl divide-y-1 divide-slate-300/25">
-                  <div className="contact-element flex flex-row justify-between items-center w-full p-5">
+                <div className="contact-container flex flex-col justify-center items-center w-3/5 rounded-xl divide-y-1 divide-slate-300/25 shadow-2xl">
+                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
                     <div className="flex flex-row justify-center items-center gap-3">
-                      <img src={mail} alt="Mail icon" width={30} height={30} />
+                      <FontAwesomeIcon icon={faEnvelope} size="1x" />
                       <span className="description text-gray-100 font-normal text-base text-center">Via email</span>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-3">
                       <span className="description text-gray-100 font-normal text-base text-center">ranwebdesign@gmail.com</span>
-                      <span className="mail-element description text-gray-100 font-normal text-base text-center hidden">&gt;</span>
+                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
                     </div>
                   </div>
-                  <div className="flex flex-row justify-between items-center w-full p-5">
+                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
                     <div className="flex flex-row justify-center items-center gap-3">
-                      <img src={phone} alt="Phone icon" width={30} height={30} />
+                      <FontAwesomeIcon icon={faPhone} size="1x" />
                       <span className="description text-gray-100 font-normal text-base text-center">Via phone</span>
                     </div>
-                    <span className="description text-gray-100 font-normal text-base text-center">+381 60 619 1925</span>
+                    <div className="flex flex-row justify-center items-center gap-3">
+                      <span className="description text-gray-100 font-normal text-base text-center">+381606191925</span>
+                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
+                    </div>
                   </div>
                 </div>
           </div>

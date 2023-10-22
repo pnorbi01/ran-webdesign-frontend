@@ -6,6 +6,7 @@ import Feature from "./Feature";
 import Application from "./Application";
 import Project from "./Project";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Application />
       <Project />
       <Contact />
+      <Footer />
     </>
   );
 }

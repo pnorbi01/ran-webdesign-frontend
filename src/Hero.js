@@ -2,6 +2,7 @@ import { Chip } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import { CheckIcon } from "./CheckIcon";
 import HeroTitle from "./HeroTitle";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -38,14 +39,18 @@ function Hero() {
       </div>
       <HeroTitle />
       <p className="text-xl text-gray-500 text-center">Unlock the power of swift and collaborative web development.</p>
-      <Button
-        className="shadow-xl font-bold text-blue-500 hover:bg-blue-300 rounded-full transition-all"
-        size="xl"
-        color="primary"
-        variant="flat"
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
-        Get started
-      </Button>
+        <Button
+          className="shadow-xl font-bold bg-blue-500 text-blue-500 text-white rounded-full transition-all px-20"
+          size="lg"
+          variant="flat"
+        >
+          Get started
+        </Button>
+      </motion.div>
     </section>
   );
 }
