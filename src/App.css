@@ -109,7 +109,7 @@
 }
 
 .about-pseudo-line {
-    background: linear-gradient(0deg, #007CF0, #AAD2FF 100%);
+    background: linear-gradient(0deg, #007CF0, #aad2ff13 100%);
 }
 
 .skill-pseudo-line {
@@ -146,6 +146,15 @@
 .contact-element:hover .arrowIcon {
     transform: translateX(5px);
     font-size: 20px;
+}
+
+.navbar {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #FFF, rgb(226 232 240), #fff) 1;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
 
 .footer {
@@ -217,13 +226,46 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .hero p {
+        width: 90%;
+    }
+
     .tool {
         width: 100%;
+    }
+
+    .contact-element .description {
+        font-size: 10px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-card, .footer-header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-body {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
 @media only screen and (max-width: 280px) {
     .hero-title, .animation-element {
         font-size: 35px;
+    }
+
+    .contact-element .contactIcon {
+        display: none;
     }
 }
