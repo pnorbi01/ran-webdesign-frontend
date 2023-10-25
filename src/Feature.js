@@ -1,8 +1,6 @@
 import React from "react";
-import secure from "./images/secure.png";
-import easyCommunication from "./images/easy-communication.png";
-import precision from "./images/precision.png";
-import modernTechnology from "./images/modern-technology.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShieldAlt, faMicrophoneAlt, faLocationCrosshairs, faBrain } from '@fortawesome/free-solid-svg-icons';
 
 function Feature() {
   return (
@@ -14,24 +12,32 @@ function Feature() {
                 <span className="description text-gray-400 font-normal text-base text-center">We'll list a few key principles to explain why it's worth entrusting your future project to us. Our team has a proven track record of delivering successful projects on time and within budget, and we are committed to providing top-notch expertise and personalized service to ensure your project's success.</span>
             </div>
             <div className="flex flex-row justify-center items-flex-start gap-4 w-full p-5 flex-wrap">
-                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5] hover:shadow-danger hover:cursor-pointer transition-all">
-                    <img src={secure} alt="secureImg" className="animate-pulse" />
-                    <h3 className="uppercase font-bold text-base text-center text-danger">Security</h3>
+                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer transition-all">
+                    <div className="icon-inner flex flex-row justify-center items-center w-11 h-11">
+                        <FontAwesomeIcon icon={faShieldAlt} size="2xl" className="feature-icon hover:cursor-pointer" style={{color: "#3B82F6"}} /> 
+                    </div>
+                    <h3 className="uppercase font-bold text-base text-center">Security</h3>
                     <span className="text-gray-500 text-base text-center">As a web development company, we prioritize safety and security. Our commitment to excellence extends to ensuring the safety of your data and online presence.</span>
                 </div>
-                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5] hover:shadow-success hover:cursor-pointer transition-all">
-                    <img src={easyCommunication} alt="easyCommunicatonImg" className="animate-pulse" />
-                    <h3 className="uppercase font-bold text-base text-center text-success">Easy communication</h3>
+                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer transition-all">
+                    <div className="icon-inner flex flex-row justify-center items-center w-11 h-11">
+                        <FontAwesomeIcon icon={faMicrophoneAlt} size="2xl" className="feature-icon hover:cursor-pointer" style={{color: "#3B82F6"}} /> 
+                    </div>                 
+                    <h3 className="uppercase font-bold text-base text-center">Easy communication</h3>
                     <span className="text-gray-500 text-base text-center">Open lines of communication at every step! We appreciate a smooth operation. That's why we always pay special attention to our clients' needs and feedback.</span>
                 </div>
-                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5] hover:shadow-secondary hover:cursor-pointer transition-all">
-                    <img src={precision} alt="precisionImg" className="animate-pulse" />
-                    <h3 className="uppercase font-bold text-base text-center text-secondary">Precision</h3>
+                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer transition-all">
+                    <div className="icon-inner flex flex-row justify-center items-center w-11 h-11">
+                        <FontAwesomeIcon icon={faLocationCrosshairs} size="2xl" className="feature-icon hover:cursor-pointer" style={{color: "#3B82F6"}} /> 
+                    </div>   
+                    <h3 className="uppercase font-bold text-base text-center">Precision</h3>
                     <span className="text-gray-500 text-base text-center">We appreciate craftsmanship and consistently strive to achieve it. We pay meticulous attention to even the smallest details.</span>
                 </div>
-                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5] hover:shadow-warning hover:cursor-pointer transition-all">
-                    <img src={modernTechnology} alt="modernTechnologyImg" className="animate-pulse" />
-                    <h3 className="uppercase font-bold text-base text-center text-warning">Modern technologies</h3>
+                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer transition-all">
+                    <div className="icon-inner flex flex-row justify-center items-center w-11 h-11">
+                        <FontAwesomeIcon icon={faBrain} size="2xl" className="feature-icon hover:cursor-pointer" style={{color: "#3B82F6"}} /> 
+                    </div> 
+                    <h3 className="uppercase font-bold text-base text-center">Modern technologies</h3>
                     <span className="text-gray-500 text-base text-center">We are passionate about new technologies and continually keep pace in this ever-evolving industry.</span>
                 </div>
             </div>

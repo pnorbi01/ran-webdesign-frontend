@@ -11,7 +11,7 @@ function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="navbar backdrop-blur fixed bg-transparent border-b-1 border-slate-100/50">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="navbar backdrop-blur fixed bg-transparent">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

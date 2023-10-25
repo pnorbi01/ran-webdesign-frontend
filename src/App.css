@@ -1,3 +1,43 @@
+:root {
+    --main-color: linear-gradient(90deg,#3B82F6,#007CF0);
+    --main-pseudo-line-color: linear-gradient(0deg, #007CF0, #FFF 100%);
+    --about-pseudo-line-color: linear-gradient(0deg, #007CF0, #aad2ff13 100%);
+}
+
+.feature-icon {
+    background-color: linear-gradient(90deg,#3B82F6,#007CF0);
+}
+
+.skill-icon-inner {
+    background-color: #52555a;
+    background-image: linear-gradient(45deg,rgba(255,253,232,0),rgba(253, 253, 247, 0.353));
+    border-radius: 15px;
+}
+
+.icon-inner {
+    background-color: #B4CFFA;
+    border-radius: 15px;
+}
+
+.icon-inner .skill-icon {
+    color: #FFF;
+}
+
+.skill-icon-inner:hover .skill-icon {
+    color: #3B82F6;
+}
+
+.tool h3 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--main-color);
+}
+
+.tool {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 #tsparticles {
     height: 100%;
 }
@@ -12,24 +52,11 @@
 }
 
 .hero {
-    background-image: url("./images/hero-bg.png");
+    background-image: url("./images/hero-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: blue;
-  }
-
-.skill {
-    background-image: url("./images/skill-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
 }
 
 .frontend-tool {
@@ -37,6 +64,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 200px;
 }
 
 .backend-tool {
@@ -44,88 +73,90 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 200px;
 }
 
 .tool-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#7928ca,#ff0080);
+    background-image: var(--main-color);
 }
 
 .section-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+    background-image: var(--main-color);
 }
 
 .about-section-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+    background-image: var(--main-color);
 }
 
 .skill-section-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#7928ca,#ff0080);
+    background-image: var(--main-color);
 }
 
 .project-section-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#ff4d4d,#f9cb28);
+    background-image: var(--main-color);
 }
 
 .contact-section-title {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #13A151, #91D8BD);
+    background-image: var(--main-color);
 }
 
 .contact-container {
-    background: linear-gradient(to right, #13A151, #91D8BD);
+    background: var(--main-color);
 }
 
 .pseudo-element-about {
-    background: linear-gradient(to right, #007CF0, #00C6F6);
+    background: var(--main-color);
 }
 
 .pseudo-element-skill {
-    background: linear-gradient(to right, #7928ca, #ff0080);
+    background: var(--main-color);
 }
 
 .pseudo-element-project {
-    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+    background: var(--main-color);
 }
 
 .button {
-    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+    background: var(--main-color);
 }
 
 .about-pseudo-line {
-    background: linear-gradient(0deg, #007CF0, #aad2ff13 100%);
+    background: var(--about-pseudo-line-color);
 }
 
 .skill-pseudo-line {
-    background: linear-gradient(0deg, #b8005c, #FFF 100%);
+    background: var(--main-pseudo-line-color);
 }
 
 .project-pseudo-line {
-    background: linear-gradient(0deg, #ff4d4d, #FFF 100%);
+    background: var(--main-pseudo-line-color);
 }
 
 .contact-pseudo-line {
-    background: linear-gradient(0deg, #13A151, #FFF 100%);
+    background: var(--main-pseudo-line-color);
 }
 
 .pseudo-element-contact {
-    background: linear-gradient(to right, #13A151, #91D8BD 100%);
+    background: var(--main-color);
 }
 
 .description-title {
@@ -140,21 +171,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg,#007cf0,#00dfd8);
+    background-image: var(--main-color);
 }
 
 .contact-element:hover .arrowIcon {
     transform: translateX(5px);
     font-size: 20px;
-}
-
-.navbar {
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(to right, #FFF, rgb(226 232 240), #fff) 1;
-    border-left: none;
-    border-right: none;
-    border-top: none;
 }
 
 .footer {
@@ -182,8 +204,10 @@
     transform: translateX(-5px);
 }
 
-.xIcon:hover {
-    font-size: 23px;
+@media only screen and (max-width: 1024px) {
+    .footer-card {
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -193,6 +217,10 @@
 
     .content {
         width: 100%;
+    }
+
+    .footer-container .footer-card:nth-child(2) {
+        width: 50%;
     }
 }
 
@@ -252,10 +280,13 @@
         justify-content: center;
     }
 
+    .footer-card {
+        height: auto;
+    }
+
     .footer-body {
         width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 }

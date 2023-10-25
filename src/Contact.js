@@ -30,26 +30,30 @@ function Contact() {
                     <span className="description text-gray-400 font-normal text-base text-center">Your satisfaction is our top priority. Contact us today and let's discuss how we can take your project to the next level!</span>
                 </div>
                 <div className="contact-container flex flex-col justify-center items-center w-3/5 rounded-xl divide-y-1 divide-slate-300/25 shadow-2xl">
-                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <FontAwesomeIcon icon={faEnvelope} size="1x" className="contactIcon" />
-                      <span className="description text-gray-100 font-normal text-base text-center">Via email</span>
+                  <a href="mailto:ranwebdesign@gmail.com" className="flex flex-row justify-between items-center w-full">
+                    <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
+                      <div className="flex flex-row justify-center items-center gap-3">
+                        <FontAwesomeIcon icon={faEnvelope} size="1x" className="contactIcon" />
+                        <span className="description text-gray-100 font-normal text-base text-center">Via email</span>
+                      </div>
+                      <div className="flex flex-row justify-center items-center gap-3">
+                        <span className="description text-gray-100 font-normal text-base text-center">ranwebdesign@gmail.com</span>
+                        <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
+                      </div>
                     </div>
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <span className="description text-gray-100 font-normal text-base text-center">ranwebdesign@gmail.com</span>
-                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
+                  </a>
+                  <a href="tel:+381606191925" className="flex flex-row justify-between items-center w-full">
+                    <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
+                      <div className="flex flex-row justify-center items-center gap-3">
+                        <FontAwesomeIcon icon={faPhone} size="1x" className="contactIcon" />
+                        <span className="description text-gray-100 font-normal text-base text-center">Via phone</span>
+                      </div>
+                      <div className="flex flex-row justify-center items-center gap-3">
+                        <span className="description text-gray-100 font-normal text-base text-center">+381606191925</span>
+                        <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
+                      </div>
                     </div>
-                  </div>
-                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <FontAwesomeIcon icon={faPhone} size="1x" className="contactIcon" />
-                      <span className="description text-gray-100 font-normal text-base text-center">Via phone</span>
-                    </div>
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <span className="description text-gray-100 font-normal text-base text-center">+381606191925</span>
-                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
-                    </div>
-                  </div>
+                  </a>
                 </div>
           </div>
       </section>

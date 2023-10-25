@@ -11,28 +11,28 @@ function Hero() {
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
-          color="danger"
+          color="primary"
         >
           Secure
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
-          color="warning"
+          color="primary"
         >
           Modern
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
-          color="secondary"
+          color="primary"
         >
           Precise
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
-          color="success"
+          color="primary"
         >
           User-Friendly
         </Chip>
