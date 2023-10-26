@@ -4,7 +4,8 @@ import { faShieldAlt, faMicrophoneAlt, faLocationCrosshairs, faBrain } from '@fo
 
 function Feature() {
   return (
-    <section className="feature flex w-full flex-row justify-center items-center text-slate-100 flex-wrap">
+    <section className="feature flex w-full flex-row justify-center items-center text-slate-100 flex-wrap relative">
+        <div className="feature-bg-blur absolute w-2/3 -bottom-40"></div>
         <div className="flex flex-col justify-center items-center gap-2 w-full p-5">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5">
                 <h3 className="section-title font-extrabold text-2xl text-center">Build faster</h3>
@@ -33,7 +34,7 @@ function Feature() {
                     <h3 className="uppercase font-bold text-base text-center">Precision</h3>
                     <span className="text-gray-500 text-base text-center">We appreciate craftsmanship and consistently strive to achieve it. We pay meticulous attention to even the smallest details.</span>
                 </div>
-                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer transition-all">
+                <div className="tool flex flex-col justify-flex-start items-center p-5 w-1/4 gap-2 rounded-3xl hover:cursor-pointer z-10 transition-all">
                     <div className="icon-inner flex flex-row justify-center items-center w-11 h-11">
                         <FontAwesomeIcon icon={faBrain} size="2xl" className="feature-icon hover:cursor-pointer" style={{color: "#3B82F6"}} /> 
                     </div> 
