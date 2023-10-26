@@ -3,43 +3,47 @@ import { Button } from "@nextui-org/react";
 import { CheckIcon } from "./CheckIcon";
 import HeroTitle from "./HeroTitle";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
+
+  const [t, i18n] = useTranslation('global');
+
   return (
     <section className="hero flex absolute top-0 left-0 h-full w-full flex-col gap-4 justify-center items-center text-slate-100 relative">
       <div className="hero-bg-blur absolute w-full"></div>
-      <div className="hero-text flex flex-row justify-center items-center gap-5 flex-wrap">
+      <div className="hero-text flex flex-row justify-center items-center gap-1 flex-wrap">
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
           color="primary"
         >
-          Secure
+          {t('chip.1')}
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
           color="primary"
         >
-          Modern
+          {t('chip.2')}
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
           color="primary"
         >
-          Precise
+          {t('chip.3')}
         </Chip>
         <Chip
           endContent={<CheckIcon size={18} />}
           variant="flat"
           color="primary"
         >
-          User-Friendly
+          {t('chip.4')}
         </Chip>
       </div>
       <HeroTitle />
-      <p className="text-xl text-gray-500 text-center">Unlock the power of swift and collaborative web development.</p>
+      <p className="text-xl text-gray-500 text-center">{t('hero.description')}</p>
       <motion.div
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -49,7 +53,7 @@ function Hero() {
           size="lg"
           variant="flat"
         >
-          Get started
+          {t('hero.button')}
         </Button>
       </motion.div>
     </section>

@@ -1,0 +1,24 @@
+{
+
+    "title": {
+        "company": "Smarter. Faster. Better."
+    },
+
+    "chip": {
+        "1": "Secure",
+        "2": "Modern",
+        "3": "Precise",
+        "4": "User-Friendly"
+    },
+
+    "hero": {
+        "first-part-title": "Build",
+        "last-part-title": "websites with us.",
+        "description": "Unlock the power of swift and collaborative web development.",
+        "faster": "faster",
+        "smarter": "smarter",
+        "better": "better",
+        "button": "Get started"
+    }
+
+}

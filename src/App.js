@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import NavBar from "./NavBar";
 import Hero from "./Hero";
 import About from "./About";
@@ -8,8 +9,17 @@ import Project from "./Project";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import "./App.css";
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
+  const [t, i18n] = useTranslation('global');
+
+  useEffect(() => {
+    document.title = t('title.company');
+    //sessionStorage.clear();
+  }, [t]);
+
   return (
     <>
       <NavBar />

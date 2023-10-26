@@ -1,10 +1,12 @@
 import React from "react";
 import TextTransition, { presets } from "react-text-transition";
+import { useTranslation } from 'react-i18next';
 
 const TEXTS = ["faster", "smarter", "better"];
 
 function HeroTitle() {
   const [index, setIndex] = React.useState(0);
+  const [t, i18n] = useTranslation('global');
 
   React.useEffect(() => {
     const intervalId = setInterval(
@@ -15,16 +17,16 @@ function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="hero-title text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.8)] to-black text-center">
-      Build{" "}
+    <h1 className="hero-title text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.8)] to-black text-center">
+      {t('hero.first-part-title')}{" "}
       <TextTransition
         inline
         springConfig={presets.wobbly}
-        className="animation-element text-7xl font-extrabold text-blue-500"
+        className="animation-element text-6xl font-extrabold text-blue-500"
       >
-        {TEXTS[index % TEXTS.length]}
+        {t(`hero.${TEXTS[index % TEXTS.length]}`)}
       </TextTransition>{" "}
-      websites with us.
+      {t('hero.last-part-title')}
     </h1>
   );
 }

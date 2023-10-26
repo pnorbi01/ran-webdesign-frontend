@@ -1,0 +1,24 @@
+{
+
+    "title": {
+        "company": "Okosabb. Gyorsabb. Jobb."
+    },
+
+    "chip": {
+        "1": "Biztonság",
+        "2": "Modern",
+        "3": "Precíz",
+        "4": "Felhasználóbarát"
+    },
+
+    "hero": {
+        "first-part-title": "Építs",
+        "last-part-title": "weboldalakat velünk.",
+        "description": "Használd ki a gyors és együttműködő webfejlesztés erejét.",
+        "faster": "gyorsabb",
+        "smarter": "okosabb",
+        "better": "jobb",
+        "button": "Vágj bele"
+    }
+
+}

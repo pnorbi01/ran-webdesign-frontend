@@ -16,17 +16,17 @@ function Skill() {
             <div className="flex flex-row justify-center items-flex-start gap-4 w-full p-5 flex-wrap">
                 <div className="frontend-tool tool flex flex-col justify-flex-start items-center p-4 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5]">
                     <div className="flex flex-row justify-center items-center flex-wrap w-full h-1/2 gap-1">
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faReact} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faReact} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faJsSquare} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faJsSquare} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faHtml5} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faHtml5} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faCss3Alt} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faCss3Alt} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
                     </div>
                     <div className="flex flex-row justify-start items-center w-full h-1/2">
@@ -43,14 +43,14 @@ function Skill() {
                 </div>
                 <div className="backend-tool tool flex flex-col justify-flex-start items-center p-4 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5]">
                     <div className="flex flex-row justify-center items-center flex-wrap w-full h-1/2 gap-1">
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faPhp} size="xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faPhp} size="xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faJava} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faJava} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
-                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11">
-                            <FontAwesomeIcon icon={faNodeJs} size="2xl" className="skill-icon hover:cursor-pointer transition-all" /> 
+                        <div className="skill-icon-inner flex flex-row justify-center items-center w-11 h-11 bg-foreground/50">
+                            <FontAwesomeIcon icon={faNodeJs} size="2xl" className="skill-icon hover:cursor-pointer hover:text-primary/40 transition-all" /> 
                         </div>
                     </div>
                     <div className="flex flex-row justify-start items-center w-full h-1/2">

@@ -1,0 +1,24 @@
+{
+
+    "title": {
+        "company": "Pametniji. Brži. Bolji."
+    },
+
+    "chip": {
+        "1": "Siguran",
+        "2": "Savremen",
+        "3": "Precizan",
+        "4": "Korisnički prijateljski"
+    },
+
+    "hero": {
+        "first-part-title": "Napravi",
+        "last-part-title": "web sa nama.",
+        "description": "Otključaj snagu brzog i saradničkog web razvoja.",
+        "faster": "brži",
+        "smarter": "umniji",
+        "better": "bolji",
+        "button": "Počni"
+    }
+
+}
