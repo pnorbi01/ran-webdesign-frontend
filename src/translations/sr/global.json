@@ -1,11 +1,19 @@
 {
 
     "title": {
-        "company": "Pametniji. Brži. Bolji."
+        "company": "Pametniji. Brži. Bolji.",
+        "company-name": "RAN Webdesign"
+    },
+
+    "navbar": {
+        "about": "O nama",
+        "skill": "Veštine",
+        "project": "Projektovi",
+        "contact": "Kontakt"
     },
 
     "chip": {
-        "1": "Siguran",
+        "1": "Bezbednost",
         "2": "Savremen",
         "3": "Precizan",
         "4": "Korisnički prijateljski"
@@ -19,6 +27,70 @@
         "smarter": "umniji",
         "better": "bolji",
         "button": "Počni"
+    },
+    
+    "about": {
+        "section-title": "O nama",
+        "description-title": "Ko smo mi?",
+        "description-first-part": "Mi smo ",
+        "description-last-part": ", strastveni tim posvećen izradi modernih web stranica. Od našeg osnivanja, posvećeni smo pružanju izvanrednih i inovativnih rešenja u online svetu našim partnerima."
+    },
+
+    "skill": {
+        "section-title": "Veštine",
+        "description-title": "Dozvolite nam da predstavimo naše veštine.",
+        "description": "Nudimo širok spektar veština kako bismo zadovoljili vaše specifične potrebe. Naš posvećeni tim ovde je da vam pomogne da postignete svoje ciljeve i ostvarite uspeh na internetu.",
+        "frontend-description": "Upoznajte naše alate za frontend koje koristimo.",
+        "backend-description": "Upoznajte naše alate za backend koje koristimo."
+    },
+
+    "feature": {
+        "section-title": "Gradite brže",
+        "description-title": "Zašto izabrati nas?",
+        "description": "Nabrojaćemo nekoliko ključnih principa kako bismo objasnili zašto vredi poveriti nam vaš budući projekat. Naš tim ima dokazanu istoriju uspešnih projekata isporučenih na vreme i unutar budžeta, i posvećeni smo pružanju vrhunskog stručnog znanja i personalizovane usluge kako bismo obezbedili uspeh vašeg projekta.",
+        "security": "Bezbednost",
+        "security-description": "Kao web razvojna kompanija, stavljamo bezbednost na prvo mesto. Naše posvećenje izvrsnosti se proteže na obezbeđivanje sigurnosti vaših podataka i online prisustva.",
+        "communication": "Laka komunikacija",
+        "communication-description": "Otvorene komunikacijske kanale na svakom koraku! Cenimo glatko poslovanje. Zato uvek obraćamo posebnu pažnju na potrebe i povratne informacije naših klijenata.",
+        "precision": "Preciznost",
+        "precision-description": "Cenimo majstorstvo i dosledno se trudimo da ga postignemo. Posvećujemo pažnju čak i najmanjim detaljima.",
+        "technologies": "Savremene tehnologije",
+        "technologies-description": "Strastveno pratimo nove tehnologije i kontinuirano držimo korak u ovoj stalno evoluirajućoj industriji."
+    },
+
+    "application": {
+        "section-title": "Mobilna aplikacija",
+        "description-title": "Dizajnirajte svoju prilagođenu mobilnu aplikaciju s nama.",
+        "description-first-part": "Kada izaberete da dizajnirate svoju mobilnu aplikaciju s nama, dobijate partnera za saradnju. Saradnjujte s nama kako biste dizajnirali i razvili svoju prilagođenu mobilnu aplikaciju u ",
+        "description-last-part": " okruženju. Pretvorimo vašu viziju u stvarnost!",
+        "technology": "React Native"
+    },
+
+    "project": {
+        "section-title": "Projekt",
+        "description-title": "Pogledajte naše projekte.",
+        "description": "Dobrodošli u istraživanje naših projekata! Trenutno imamo samo jedan projekt, ali ga ponosno predstavljamo.",
+        "button-title": "Idite na sajt",
+        "used-technologies": "Korištene tehnologije"
+    },
+
+    "contact": {
+        "section-title": "Kontakt",
+        "description-title": "Kontaktirajte nas.",
+        "description": "Ne oklevajte! Hajde da zajedno unapredimo vaš projekat. Bez obzira da li imate novi projekat na umu ili trebate poboljšanja postojećem, tu smo da sarađujemo i ostvarimo vašu viziju.",
+        "description-part": "Vaše zadovoljstvo nam je najvažnije. Kontaktirajte nas danas i razgovarajmo o tome kako možemo unaprediti vaš projekat!",
+        "email-text": "Preko email-a",
+        "phone-text": "Preko telefona"
+    },
+
+    "footer": {
+        "company-card-title": "Kompanija",
+        "company-card-about": "O nama",
+        "company-card-skill": "Veštine",
+        "company-card-feature": "Funkcionalnosti",
+        "company-card-app": "Mobilne aplikacije",
+        "company-card-contact": "Kontakt",
+        "contact-card-title": "Kontakt"
     }
 
 }

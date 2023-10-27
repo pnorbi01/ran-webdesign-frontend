@@ -1,17 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faJsSquare, faHtml5, faCss3Alt, faPhp, faJava, faNodeJs } from "@fortawesome/free-brands-svg-icons"
+import { faReact, faJsSquare, faHtml5, faCss3Alt, faPhp, faJava, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 function Skill() {
-  return (
+
+    const [t, i18n] = useTranslation('global');
+
+    return (
     <section className="skill flex w-full flex-row justify-center items-center text-slate-100 flex-wrap mt-20">
         <div className="flex flex-col justify-center items-center gap-2 w-full p-5">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
                 <div className="pseudo-element-skill before:content-['2'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
                 <div className="skill-pseudo-line before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-secondary-500"></div>
-                <h3 className="skill-section-title font-extrabold text-2xl text-center">Skills</h3>
-                <h1 className="description-title text-gray-800 font-extrabold text-4xl text-center">Let us introduce our skills</h1>
-                <span className="description text-gray-400 font-normal text-base text-center">We offer a wide range of skills to meet your specific needs. Our dedicated team is here to assist you in achieving your goals and making your online presence a success.</span>
+                <h3 className="skill-section-title font-extrabold text-xl text-center">{t('skill.section-title')}</h3>
+                <h1 className="description-title text-gray-800 font-extrabold text-3xl text-center">{t('skill.description-title')}</h1>
+                <span className="description text-gray-400 font-normal text-base text-center">{t('skill.description')}</span>
             </div>
             <div className="flex flex-row justify-center items-flex-start gap-4 w-full p-5 flex-wrap">
                 <div className="frontend-tool tool flex flex-col justify-flex-start items-center p-4 w-1/4 rounded-3xl shadow-lg shadow-slate-900/[.5]">
@@ -37,7 +41,7 @@ function Skill() {
                         </div>
                         <div className="flex flex-col justify-start items-start w-full h-full px-2 py-1.5">
                             <span className="font-bold text-lg" style={{color: '#333'}}>Frontend</span>
-                            <span className="font-normal font-normal text-sm" style={{color: '#96958d'}}>Explore our frontend tools that we use.</span>
+                            <span className="font-normal font-normal text-sm" style={{color: '#96958d'}}>{t('skill.frontend-description')}</span>
                         </div>
                     </div>
                 </div>
@@ -61,7 +65,7 @@ function Skill() {
                         </div>
                         <div className="flex flex-col justify-start items-start w-full h-full px-2 py-1.5">
                             <span className="font-bold text-lg" style={{color: '#333'}}>Backend</span>
-                            <span className="font-normal font-normal text-sm" style={{color: '#96958d'}}>Explore our backend tools that we use.</span>
+                            <span className="font-normal font-normal text-sm" style={{color: '#96958d'}}>{t('skill.backend-description')}</span>
                         </div>
                     </div>
                 </div>

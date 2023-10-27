@@ -1,7 +1,15 @@
 {
 
     "title": {
-        "company": "Okosabb. Gyorsabb. Jobb."
+        "company": "Okosabb. Gyorsabb. Jobb.",
+        "company-name": "RAN Webdesign"
+    },
+
+    "navbar": {
+        "about": "Rólunk",
+        "skill": "Készségek",
+        "project": "Projektek",
+        "contact": "Kontakt"
     },
 
     "chip": {
@@ -12,13 +20,78 @@
     },
 
     "hero": {
-        "first-part-title": "Építs",
+        "first-part-title": "Építsen",
         "last-part-title": "weboldalakat velünk.",
-        "description": "Használd ki a gyors és együttműködő webfejlesztés erejét.",
+        "description": "Használja ki a gyors és együttműködő webfejlesztés erejét.",
         "faster": "gyorsabb",
         "smarter": "okosabb",
         "better": "jobb",
         "button": "Vágj bele"
+    },
+    
+    "about": {
+        "section-title": "Rólunk",
+        "description-title": "Kik vagyunk mi?",
+        "description-first-part": "Mi vagyunk a ",
+        "description-last-part": ", egy szenvedélyes csapat, amely elkötelezett a modern weboldalak kialakítása iránt. Alapításunk óta elkötelezettek vagyunk amellett, hogy kiváló és újszerű megoldásokat nyújtsunk online partnereinknek."
+    },
+
+    "skill": {
+        "section-title": "Képességek",
+        "description-title": "Engedje meg, hogy bemutassuk készségeinket.",
+        "description": "Széles körű készségeket kínálunk az Ön speciális igényeinek kielégítésére. Elkötelezett csapatunk itt van, hogy segítsen Önnek elérni céljait és online jelenlétét sikerre vigye.",
+        "frontend-description": "Ismerje meg az általunk használt frontend eszközöket.",
+        "backend-description": "Ismerje meg az általunk használt backend eszközöket."
+    },
+
+    "feature": {
+        "section-title": "Építsen gyorsabban",
+        "description-title": "Miért minket válasszon?",
+        "description": "Néhány kulcsfontosságú elvet sorolunk fel, hogy elmagyarázzuk, miért érdemes ránk bízni a jövőbeli projektjét. Csapatunknak számos sikeres projekt teljesítését mutató referenciája van, amelyek időben és költségvetésen belül valósultak meg. Kötelezettséget vállalunk a kiemelkedő szakértelmünk és személyre szabott szolgáltatásunk nyújtására, hogy projektje sikeres legyen.",
+        "security": "Biztonság",
+        "security-description": "Mint webfejlesztési vállalat, prioritásként kezeljük a biztonságot. Az elkötelezettségünk a kiválóság iránt kiterjed az Ön adatainak és online jelenlétének biztonságának garantálására is.",
+        "communication": "Könnyed kommunikáció",
+        "communication-description": "Nyitott kommunikációs csatornák minden lépésnél! Értékeljük a zökkenőmentes működést. Ezért mindig különös figyelmet fordítunk ügyfeleink igényeire és visszajelzéseire.",
+        "precision": "Precizitás",
+        "precision-description": "Értékeljük a kézügyességet, és következetesen törekszünk arra, hogy elérjük azt. Rendkívüli figyelmet szentelünk még a legapróbb részleteknek is.",
+        "technologies": "Modern technológiák",
+        "technologies-description": "Szenvedéllyel követjük az új technológiákat és folyamatosan lépést tartunk ebben a folyamatosan fejlődő iparágban."
+    },
+
+    "application": {
+        "section-title": "Mobilalkalmazás",
+        "description-title": "Készítse el egyedi mobilalkalmazását velünk.",
+        "description-first-part": "Amikor minket választ a mobilalkalmazás tervezéséhez, egy együttműködő partnerrel rendelkezik. Dolgozzon együtt velünk, hogy tervezzük és fejlesszük egyedi mobilalkalmazását ",
+        "description-last-part": " keretrendszerben. Fordítsuk valósággá az Ön vízióját!",
+        "technology": "React Native"
+    },
+
+    "project": {
+        "section-title": "Projekt",
+        "description-title": "Tekintse meg projektjeinket.",
+        "description": "Üdvözöljük a projektjeink felfedezésében! Jelenleg csak egy projektünk van, de büszkén mutatjuk be azt.",
+        "button-title": "Ugrás az oldalra",
+        "used-technologies": "Felhasznált technológiák"
+    },
+
+    "contact": {
+        "section-title": "Kontakt",
+        "description-title": "Lépjen velünk kapcsolatba.",
+        "description": "Ne habozzon! Tegyük még jobbá együtt a projektjét. Legyen szó egy új projekt ötletéről, vagy meglévő projekt továbbfejlesztéséről, mi itt vagyunk együttműködni, és valóra váltani az Ön elképzeléseit.",
+        "description-part": "Az elégedettsége az elsődleges számunkra. Lépjen kapcsolatba velünk még ma, és beszéljük meg, hogyan vihetjük projektjét a következő szintre!",
+        "email-text": "Email-en keresztül",
+        "phone-text": "Telefonon keresztül"
+    },
+
+    "footer": {
+        "company-card-title": "Cég",
+        "company-card-about": "Rólunk",
+        "company-card-skill": "Készségek",
+        "company-card-feature": "Jellemzők",
+        "company-card-app": "Mobilalkalmazás",
+        "company-card-contact": "Kontakt",
+        "contact-card-title": "Kontakt"
     }
+
 
 }

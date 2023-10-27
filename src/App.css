@@ -300,14 +300,33 @@
     }
     
     .hero-title, .animation-element {
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
         width: 80%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-word;
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .hero-text {
+        width: 90%;
     }
 }
 
-@media only screen and (max-width: 280px) {
-    .contact-element .contactIcon {
+@media only screen and (max-width: 340px) {
+    .contact-element span:last-child {
         display: none;
+    }
+
+    .footer-container .footer-card:nth-child(2) {
+        width: 100%;
     }
 }
