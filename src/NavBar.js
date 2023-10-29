@@ -1,18 +1,20 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Dropdown, DropdownTrigger, DropdownSection, DropdownMenu, DropdownItem, Button, Avatar, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import logo from "./images/logo.png";
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
 
 function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
+  const [isScrolling, setIsScrolling] = React.useState(false);
   const initialLocale = Cookies.get("locale");
   const [selectedKeys, setSelectedKeys] = React.useState(new Set([initialLocale]));
   const [t, i18n] = useTranslation('global');
+  const currentYear = new Date().getFullYear();
 
   const handleChangeLanguage = (lang) => {
     Cookies.set("locale", lang)
     i18n.changeLanguage(lang)
-    console.log(Cookies.get("locale"))
   };
 
   const menuItems = [
@@ -47,36 +49,61 @@ function NavBar() {
     return ''; // Empty string, if nothing is selected
   }, [selectedKeys]);
 
+  const scrollToContent = (div) => {
+    const section = document.querySelector(`${div}`);
+    if(section) {
+      const yOffset = section.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    }
+  }
+
+  const handleClickOnWeb = (scrollTo, event) => {
+    scrollToContent(scrollTo);
+    event.preventDefault();
+  };
+
+  const handleClickOnPhone = (scrollTo, event) => {
+    setIsMenuOpen(false);
+    setIsScrolling(true);
+
+    setTimeout(() => {
+      setIsScrolling(false);
+      scrollToContent(scrollTo);
+    }, 100);
+
+    event.preventDefault();
+  };
+
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="navbar backdrop-blur fixed bg-transparent">
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="navbar backdrop-blur fixed bg-transparent">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-extrabold text-xl text-inherit">RAN</p>
+          <img src={logo} alt="RAN Webdesign logo" width={40} height={40} />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-5" justify="center">
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all">
+          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.about', e)}>
             {t('navbar.about')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all">
+          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.skill', e)}>
             {t('navbar.skill')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all">
+          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.project', e)}>
             {t('navbar.project')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all">
+          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.contact', e)}>
             {t('navbar.contact')}
           </Link>
         </NavbarItem>
@@ -141,11 +168,15 @@ function NavBar() {
               className="w-full text-grey-500 font-bold"
               href="#"
               size="lg"
+              onClick={(e) => handleClickOnPhone('.'+item, e)}
             >
               {t('navbar.'+ item)}
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarContent justify="center" className="items-end">
+          <span className="text-grey-500 font-bold text-sm">© {currentYear} - {t('navbar.copyright')}</span>
+        </NavbarContent>
       </NavbarMenu>
     </Navbar>
   );

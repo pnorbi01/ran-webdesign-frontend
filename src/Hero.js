@@ -9,6 +9,19 @@ function Hero() {
 
   const [t, i18n] = useTranslation('global');
 
+  const scrollToContent = (div) => {
+    const section = document.querySelector(`${div}`);
+    if(section) {
+      const yOffset = section.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    }
+  }
+
+  const handleClickOnWeb = (scrollTo, event) => {
+    scrollToContent(scrollTo);
+    event.preventDefault();
+  };
+
   return (
     <section className="hero flex absolute top-0 left-0 h-full w-full flex-col gap-4 justify-center items-center text-slate-100 relative">
       <div className="hero-bg-blur absolute w-full"></div>
@@ -52,6 +65,7 @@ function Hero() {
           className="shadow-xl font-bold bg-blue-500 text-blue-500 text-white rounded-full transition-all px-20"
           size="lg"
           variant="flat"
+          onClick={(e) => handleClickOnWeb('.contact', e)}
         >
           {t('hero.button')}
         </Button>

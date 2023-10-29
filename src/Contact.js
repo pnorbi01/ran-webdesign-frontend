@@ -8,7 +8,7 @@ function Contact() {
   const [t, i18n] = useTranslation('global');
 
   return (
-    <section className="flex w-full flex-row justify-center items-center text-slate-100 flex-wrap mt-32">
+    <section className="contact flex w-full flex-row justify-center items-center text-slate-100 flex-wrap mt-32">
         <div className="flex flex-col justify-center items-center gap-2 w-full p-3">
               <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
                   <div className="pseudo-element-contact before:content-['4'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
@@ -26,7 +26,7 @@ function Contact() {
                       <span className="description text-gray-100 font-normal text-base text-center">{t('contact.email-text')}</span>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-3">
-                      <span className="description text-gray-100 font-normal text-base text-center">ranwebdesign@gmail.com</span>
+                      <span className="description text-gray-100 font-normal text-base text-center">info@ranwebdesign.xyz</span>
                       <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
                     </div>
                   </div>

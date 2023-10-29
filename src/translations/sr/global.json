@@ -9,14 +9,15 @@
         "about": "O nama",
         "skill": "Veštine",
         "project": "Projektovi",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "copyright": "Sva prava zadržana."
     },
 
     "chip": {
         "1": "Bezbednost",
         "2": "Savremen",
         "3": "Precizan",
-        "4": "Korisnički prijateljski"
+        "4": "Korisnički prijatelj"
     },
 
     "hero": {

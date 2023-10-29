@@ -9,7 +9,8 @@
         "about": "Rólunk",
         "skill": "Készségek",
         "project": "Projektek",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "copyright": "Minden jog fenntartva."
     },
 
     "chip": {
@@ -37,7 +38,7 @@
     },
 
     "skill": {
-        "section-title": "Képességek",
+        "section-title": "Készségek",
         "description-title": "Engedje meg, hogy bemutassuk készségeinket.",
         "description": "Széles körű készségeket kínálunk az Ön speciális igényeinek kielégítésére. Elkötelezett csapatunk itt van, hogy segítsen Önnek elérni céljait és online jelenlétét sikerre vigye.",
         "frontend-description": "Ismerje meg az általunk használt frontend eszközöket.",

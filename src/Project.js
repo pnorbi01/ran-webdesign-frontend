@@ -46,7 +46,7 @@ function Project() {
                             <p className="text-tiny text-white/60">Casar App</p>
                         </div>
                         </div>
-                        <Button radius="full" size="sm" className="button">{t('project.button-title')}</Button>
+                        <a href="https://casar.rs"><Button radius="full" size="sm" className="button">{t('project.button-title')}</Button></a>
                     </CardFooter>
                 </Card>
             </div>
