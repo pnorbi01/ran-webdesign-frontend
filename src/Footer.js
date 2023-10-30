@@ -70,7 +70,7 @@ function Footer() {
                 <div className="footer-body flex flex-col justify-start items-end gap-2 w-1/2 h-full text-gray-500 text-xs">
                     <div className="footer-contact-element flex flex-row justify-center items-center gap-1 hover:cursor-pointer">
                         <FontAwesomeIcon icon={faEnvelope} size="lg" className="footerContactIcon transition-all" />
-                        <a href="mailto:ranwebdesign@gmail.com"><span>info@ranwebdesign.xyz</span></a>
+                        <a href="mailto:info@ranwebdesign.xyz"><span>info@ranwebdesign.xyz</span></a>
                     </div>
                     <div className="footer-contact-element flex flex-row justify-center items-center gap-1 hover:cursor-pointer">
                         <FontAwesomeIcon icon={faPhone} size="lg" className="footerContactIcon transition-all" />

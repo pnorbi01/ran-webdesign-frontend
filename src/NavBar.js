@@ -10,7 +10,6 @@ function NavBar() {
   const initialLocale = Cookies.get("locale");
   const [selectedKeys, setSelectedKeys] = React.useState(new Set([initialLocale]));
   const [t, i18n] = useTranslation('global');
-  const currentYear = new Date().getFullYear();
 
   const handleChangeLanguage = (lang) => {
     Cookies.set("locale", lang)
@@ -69,7 +68,7 @@ function NavBar() {
     setTimeout(() => {
       setIsScrolling(false);
       scrollToContent(scrollTo);
-    }, 100);
+    }, 500);
 
     event.preventDefault();
   };
@@ -120,7 +119,7 @@ function NavBar() {
               </Button>
             </DropdownTrigger>
             <DropdownMenu 
-              aria-label="Multiple selection example"
+              aria-label="Single selection"
               variant="flat"
               closeOnSelect={true}
               disallowEmptySelection
@@ -131,7 +130,7 @@ function NavBar() {
               <DropdownSection title="Languages">
                 <DropdownItem 
                   key="en"
-                  startContent={<Avatar alt="English" className="w-6 h-6" src="https://flagcdn.com/gb.svg" />}
+                  startContent={<Avatar alt="English" className="w-6 h-6" src="https://flagcdn.com/gb.svg" onClick={() => handleChangeLanguage('en')} />}
                   onClick={() => handleChangeLanguage('en')}
                   textValue="en"
                 >
@@ -139,7 +138,7 @@ function NavBar() {
                 </DropdownItem>
                 <DropdownItem 
                   key="hu"
-                  startContent={<Avatar alt="Hungary" className="w-6 h-6" src="https://flagcdn.com/hu.svg" />}
+                  startContent={<Avatar alt="Hungary" className="w-6 h-6" src="https://flagcdn.com/hu.svg" onClick={() => handleChangeLanguage('hu')} />}
                   onClick={() => handleChangeLanguage('hu')}
                   textValue="hu"
                 >
@@ -147,7 +146,7 @@ function NavBar() {
                 </DropdownItem>
                 <DropdownItem 
                   key="sr"
-                  startContent={<Avatar alt="Serbia" className="w-6 h-6" src="https://flagcdn.com/rs.svg" />}
+                  startContent={<Avatar alt="Serbia" className="w-6 h-6" src="https://flagcdn.com/rs.svg" onClick={() => handleChangeLanguage('sr')} />}
                   onClick={() => handleChangeLanguage('sr')}
                   textValue="sr"
                 >
@@ -165,7 +164,7 @@ function NavBar() {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              className="w-full text-grey-500 font-bold"
+              className="w-full text-grey-500 font-bold text-2xl gap-3"
               href="#"
               size="lg"
               onClick={(e) => handleClickOnPhone('.'+item, e)}
@@ -174,9 +173,6 @@ function NavBar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <NavbarContent justify="center" className="items-end">
-          <span className="text-grey-500 font-bold text-sm">© {currentYear} - {t('navbar.copyright')}</span>
-        </NavbarContent>
       </NavbarMenu>
     </Navbar>
   );

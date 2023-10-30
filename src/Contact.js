@@ -19,7 +19,7 @@ function Contact() {
                   <span className="description text-gray-400 font-normal text-base text-center">{t('contact.description-part')}</span>
               </div>
               <div className="contact-container flex flex-col justify-center items-center w-3/5 rounded-xl divide-y-1 divide-slate-300/25 shadow-2xl">
-                <a href="mailto:ranwebdesign@gmail.com" className="flex flex-row justify-between items-center w-full">
+                <a href="mailto:info@ranwebdesign.xyz" className="flex flex-row justify-between items-center w-full">
                   <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
                     <div className="flex flex-row justify-center items-center gap-3">
                       <FontAwesomeIcon icon={faEnvelope} size="1x" className="contactIcon" />
@@ -37,7 +37,7 @@ function Contact() {
                       <FontAwesomeIcon icon={faPhone} size="1x" className="contactIcon" />
                       <span className="description text-gray-100 font-normal text-base text-center">{t('contact.phone-text')}</span>
                     </div>
-                    <div className="flex flex-row justify-center items-center gap-3">
+                    <div className="flex flex-row justify-start items-center gap-3">
                       <span className="description text-gray-100 font-normal text-base text-center">+381606191925</span>
                       <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
                     </div>

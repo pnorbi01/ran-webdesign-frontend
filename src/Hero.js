@@ -56,7 +56,7 @@ function Hero() {
         </Chip>
       </div>
       <HeroTitle />
-      <p className="text-xl text-gray-500 text-center">{t('hero.description')}</p>
+      <p className="hero-description text-xl text-gray-500 text-center">{t('hero.description')}</p>
       <motion.div
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}

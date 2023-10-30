@@ -272,7 +272,7 @@
     }
 
     .contact-element .description {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .contact-container {
@@ -302,11 +302,19 @@
     .hero-title, .animation-element {
         font-size: 30px;
         text-align: center;
-        width: 80%;
+        width: 90%;
+    }
+
+    .hero-description {
+        font-size: 18px;
     }
 
     .hero-text {
         width: 90%;
+    }
+
+    .description-title {
+        font-size: 25px;
     }
 }
 
