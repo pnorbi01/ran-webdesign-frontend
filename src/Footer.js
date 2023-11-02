@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logo from "./images/logo.png";
-import { faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from 'react-i18next';
 
 function Footer() {
@@ -33,6 +33,7 @@ function Footer() {
                 </div>
                 <div className="footer-body flex flex-row justify-start items-center w-full gap-2 text-gray-500">
                     <a href="https://twitter.com/RANWebdesign"><FontAwesomeIcon icon={faXTwitter} size="lg" className="hover:cursor-pointer" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61552789026395"><FontAwesomeIcon icon={faFacebook} size="lg" className="hover:cursor-pointer" /></a>
                     <a href="https://github.com/pnorbi01"><FontAwesomeIcon icon={faGithub} size="lg" className="hover:cursor-pointer" /></a>
                 </div>
             </div>
@@ -74,7 +75,7 @@ function Footer() {
                     </div>
                     <div className="footer-contact-element flex flex-row justify-center items-center gap-1 hover:cursor-pointer">
                         <FontAwesomeIcon icon={faPhone} size="lg" className="footerContactIcon transition-all" />
-                        <a href="tel:+381606191925"><span>+381606191925</span></a>
+                        <a href="tel:0606191925"><span>0606191925</span></a>
                     </div>
                 </div>
             </div>

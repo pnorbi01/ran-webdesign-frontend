@@ -73,6 +73,21 @@ function NavBar() {
     event.preventDefault();
   };
 
+  window.onscroll = function() {
+    scroll()
+  };
+
+  function scroll() {
+    const navbar = document.querySelector(".navbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 4px 12px";
+        navbar.style.padding = "5px 0px";
+    } else {
+        navbar.style.boxShadow = "none";
+        navbar.style.padding = "0px";
+    }
+  }
+
   return (
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="navbar backdrop-blur fixed bg-transparent">
       <NavbarContent>
@@ -87,22 +102,22 @@ function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-5" justify="center">
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.about', e)}>
+          <Link href="#" className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.about', e)}>
             {t('navbar.about')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.skill', e)}>
+          <Link href="#" className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.skill', e)}>
             {t('navbar.skill')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.project', e)}>
+          <Link href="#" className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.project', e)}>
             {t('navbar.project')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="text-sm text-grey-500 font-bold hover:text-blue-600 hover:tracking-wide hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.contact', e)}>
+          <Link href="#" className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all" onClick={(e) => handleClickOnWeb('.contact', e)}>
             {t('navbar.contact')}
           </Link>
         </NavbarItem>
