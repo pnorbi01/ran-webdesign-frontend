@@ -81,10 +81,8 @@ function NavBar() {
     const navbar = document.querySelector(".navbar");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         navbar.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 4px 12px";
-        navbar.style.padding = "5px 0px";
     } else {
         navbar.style.boxShadow = "none";
-        navbar.style.padding = "0px";
     }
   }
 
