@@ -8,7 +8,7 @@ function Application() {
 
   return (
     <section className="application flex w-full flex-row justify-center items-center text-slate-100 flex-wrap">
-        <div className="app-descr flex flex-row justify-center items-center gap-2 w-1/3 p-3 flex-wrap">
+        <div className="app-descr flex flex-row justify-center items-center gap-2 w-1/3 p-3 flex-wrap z-10">
             <div className="content flex flex-col justify-center items-flex-start gap-2 p-5">
                 <h3 className="section-title font-extrabold text-xl text-left">{t('application.section-title')}</h3>
                 <h1 className="description-title text-gray-800 font-extrabold text-3xl text-left">{t('application.description-title')}</h1>

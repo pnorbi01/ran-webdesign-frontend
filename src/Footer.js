@@ -25,7 +25,7 @@ function Footer() {
 
     return (
     <section className="footer flex w-full flex-row justify-center items-center text-slate-100 mt-20">
-        <div className="footer-container flex flex-row justify-center items-center gap-2 w-full p-3">
+        <div className="footer-container flex flex-row justify-center items-center gap-2 w-full p-3 z-10">
             <div className="footer-card flex flex-col justify-start items-center gap-2 w-1/4 h-52 p-3">
                 <div className="footer-header flex flex-row justify-start items-center w-full gap-2">
                     <img src={logo} alt="RAN Webdesign logo" width={30} height={30} />

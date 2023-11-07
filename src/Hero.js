@@ -23,8 +23,7 @@ function Hero() {
   };
 
   return (
-    <section className="hero flex absolute top-0 left-0 h-full w-full flex-col gap-4 justify-center items-center text-slate-100 relative">
-      <div className="hero-bg-blur absolute w-full"></div>
+    <section className="hero flex absolute top-0 left-0 h-full w-full flex-col gap-4 justify-center items-center text-slate-100 relative z-10">
       <div className="hero-text flex flex-row justify-center items-center gap-1 flex-wrap">
         <Chip
           endContent={<CheckIcon size={18} />}

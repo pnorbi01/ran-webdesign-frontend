@@ -9,8 +9,7 @@ function Feature() {
 
     return (
     <section className="feature flex w-full flex-row justify-center items-center text-slate-100 flex-wrap relative">
-        <div className="feature-bg-blur absolute w-2/3 -bottom-40"></div>
-        <div className="flex flex-col justify-center items-center gap-2 w-full p-5">
+        <div className="flex flex-col justify-center items-center gap-2 w-full p-5 z-10">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5">
                 <h3 className="section-title font-extrabold text-xl text-center">{t('feature.section-title')}</h3>
                 <h1 className="description-title text-gray-800 font-extrabold text-3xl text-center">{t('feature.description-title')}</h1>

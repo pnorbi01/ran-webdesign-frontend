@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <section className="contact flex w-full flex-row justify-center items-center text-slate-100 flex-wrap mt-32">
-        <div className="flex flex-col justify-center items-center gap-2 w-full p-3">
+        <div className="flex flex-col justify-center items-center gap-2 w-full p-3 z-10">
               <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
                   <div className="pseudo-element-contact before:content-['4'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
                   <div className="contact-pseudo-line before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-primary-500"></div>

@@ -12,7 +12,7 @@ function Project() {
 
     return (
     <section className="project flex w-full flex-row justify-center items-center mt-20 text-slate-100 flex-wrap">
-        <div className="flex flex-col justify-center items-center gap-2 w-full p-3">
+        <div className="flex flex-col justify-center items-center gap-2 w-full p-3 z-10">
             <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
                 <div className="pseudo-element-project before:content-['3'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
                 <div className="project-pseudo-line before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-secondary-500"></div>
@@ -21,7 +21,7 @@ function Project() {
                 <span className="description text-gray-400 font-normal text-base text-center">{t('project.description')}</span>
             </div>
             <div className="flex flex-row justify-center items-center flex-wrap gap-3">
-                <Card isFooterBlurred className="w-[270] h-[300px] col-span-12 sm:col-span-7 shadow-2xl">
+                <Card isFooterBlurred className="w-[270] h-[300px] col-span-12 sm:col-span-7 shadow-xl">
                     <CardHeader className="absolute z-10 top-1 flex-col items-start">
                         <p className="text-tiny text-white/60 uppercase font-bold">{t('project.used-technologies')}</p>
                         <div className="flex flex-row">

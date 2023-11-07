@@ -17,7 +17,7 @@ function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="hero-title text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.5)] to-black text-center">
+    <h1 className="hero-title text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.7)] to-black text-center p-1">
       {t('hero.first-part-title')}{" "}
       <TextTransition
         inline
