@@ -1,340 +1,346 @@
 :root {
-    --main-color: linear-gradient(90deg,#3B82F6,#007CF0);
-    --main-pseudo-line-color: linear-gradient(0deg, #007CF0, #FFF 100%);
-    --about-pseudo-line-color: linear-gradient(0deg, #007CF0, #aad2ff13 100%);
+  --main-color: linear-gradient(90deg, #3b82f6, #007cf0);
+  --main-pseudo-line-color: linear-gradient(0deg, #007cf0, #fff 100%);
+  --about-pseudo-line-color: linear-gradient(0deg, #007cf0, #aad2ff13 100%);
+}
+
+.platform {
+  box-shadow: inset 0px 0px 0px 1px rgba(13, 34, 71, 0.08),
+    inset 0px 0px 0px 2px rgba(255, 255, 255, 0.2);
 }
 
 .navbar {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-item {
-    position: relative;
-    transition: all 0.35s ease-in-out;
+  position: relative;
+  transition: all 0.35s ease-in-out;
 }
-  
+
 .navbar-item::before {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #3B82F6;
-    border-radius: 5px;
-    transition: width 0.5s ease-in-out, transform 0.5s ease-in-out, transition-delay 0.3s;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3b82f6;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out, transform 0.5s ease-in-out,
+    transition-delay 0.3s;
 }
-  
+
 .navbar-item:hover::before {
-    width: 100%;
+  width: 100%;
 }
-  
+
 .navbar-item:hover {
-    transform: translateY(-3px);
-    cursor: pointer;
+  transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .feature-icon {
-    background-color: linear-gradient(90deg,#3B82F6,#007CF0);
+  background-color: linear-gradient(90deg, #3b82f6, #007cf0);
 }
 
-.icon-inner, .skill-icon-inner {
-    border-radius: 15px;
+.icon-inner,
+.skill-icon-inner {
+  border-radius: 15px;
 }
 
 .icon-inner .skill-icon {
-    color: #FFF;
+  color: #fff;
 }
 
 .tool h3 {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .tool {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #tsparticles {
-    height: 100%;
+  height: 100%;
 }
 
 .fade-in {
-    transition: opacity 1.75s ease;
+  transition: opacity 1.75s ease;
 }
 
 .fade-out {
-    opacity: 0;
-    transition: opacity 1.75s ease;
+  opacity: 0;
+  transition: opacity 1.75s ease;
 }
 
 .hero {
-    background-image: url("./images/hero-bg.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    z-index: 2;
+  background-image: url("./images/hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 2;
 }
 
 .frontend-tool {
-    background-image: url("./images/frontend-tool.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 200px;
+  background-image: url("./images/frontend-tool.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 200px;
 }
 
 .backend-tool {
-    background-image: url("./images/backend-tool.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 200px;
+  background-image: url("./images/backend-tool.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 200px;
 }
 
 .tool-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .section-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .about-section-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .skill-section-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .project-section-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .contact-section-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .contact-container {
-    background: var(--main-color);
-}
-
-.pseudo-element-about {
-    background: var(--main-color);
+  background: var(--main-color);
 }
 
 .pseudo-element-skill {
-    background: var(--main-color);
+  background: var(--main-color);
 }
 
 .pseudo-element-project {
-    background: var(--main-color);
+  background: var(--main-color);
 }
 
 .button {
-    background: var(--main-color);
-}
-
-.about-pseudo-line {
-    background: var(--about-pseudo-line-color);
+  background: var(--main-color);
 }
 
 .skill-pseudo-line {
-    background: var(--main-pseudo-line-color);
+  background: var(--main-pseudo-line-color);
 }
 
 .project-pseudo-line {
-    background: var(--main-pseudo-line-color);
+  background: var(--main-pseudo-line-color);
 }
 
 .contact-pseudo-line {
-    background: var(--main-pseudo-line-color);
+  background: var(--main-pseudo-line-color);
 }
 
 .pseudo-element-contact {
-    background: var(--main-color);
+  background: var(--main-color);
 }
 
 .description-title {
-    background: linear-gradient(180deg,rgba(0,0,0,.7),#000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), #000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .description-element {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: var(--main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--main-color);
 }
 
 .contact-element:hover .arrowIcon {
-    transform: translateX(5px);
-    font-size: 20px;
+  transform: translateX(5px);
+  font-size: 20px;
 }
 
 .footer {
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(to right, #FFF, rgb(226 232 240), #fff) 1;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fff, rgb(226 232 240), #fff) 1;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 
 .footer-title {
-    background: linear-gradient(180deg,rgba(0,0,0,.8),#000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), #000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .company-element:hover .arrowFooterIcon {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .footer-contact-element:hover .footerContactIcon {
-    transform: translateX(-5px);
+  transform: translateX(-5px);
 }
 
 @media only screen and (max-width: 1024px) {
-    .footer-card {
-        width: 30%;
-    }
+  .footer-card {
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .tool {
-        width: 40%;
-    }
+  .tool {
+    width: 40%;
+  }
 
-    .content {
-        width: 100%;
-    }
+  .content {
+    width: 100%;
+  }
 
-    .footer-container .footer-card:nth-child(2) {
-        width: 50%;
-    }
+  .footer-container .footer-card:nth-child(2) {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width: 768px)  {
-    .content, .app-descr {
-        width: 100%;
-        align-items: center;
-    }
+@media only screen and (max-width: 768px) {
+  .content,
+  .app-descr {
+    width: 100%;
+    align-items: center;
+  }
 
-    .description-title, .description, .section-title {
-        text-align: center;
-        width: 100%;
-    }
+  .description-title,
+  .description,
+  .section-title {
+    text-align: center;
+    width: 100%;
+  }
 
-    .hero-title, .animation-element {
-        font-size: 40px;
-    }
+  .hero-title,
+  .animation-element {
+    font-size: 40px;
+  }
 
-    .description-title {
-        font-size: 30px;
-    }
+  .description-title {
+    font-size: 30px;
+  }
 
-    .tool {
-        width: 40%;
-    }
+  .tool {
+    width: 40%;
+  }
 
-    .mobile-image, .contact-image {
-        width: 100%;
-        justify-content: center;
-    }
+  .mobile-image,
+  .contact-image {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .hero p {
-        width: 90%;
-    }
+  .hero p {
+    width: 90%;
+  }
 
-    .tool {
-        width: 100%;
-    }
+  .tool {
+    width: 100%;
+  }
 
-    .contact-element .description {
-        font-size: 13px;
-    }
+  .contact-element .description {
+    font-size: 13px;
+  }
 
-    .contact-container {
-        width: 100%;
-    }
+  .contact-container {
+    width: 100%;
+  }
 
-    .footer-container {
-        flex-direction: column;
-    }
+  .footer-container {
+    flex-direction: column;
+  }
 
-    .footer-card, .footer-header {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
+  .footer-card,
+  .footer-header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .footer-card {
-        height: auto;
-    }
+  .footer-card {
+    height: auto;
+  }
 
-    .footer-body {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .hero-title, .animation-element {
-        font-size: 30px;
-        text-align: center;
-        width: 90%;
-    }
+  .footer-body {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .hero-description {
-        font-size: 18px;
-    }
+  .hero-title,
+  .animation-element {
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+  }
 
-    .hero-text {
-        width: 90%;
-    }
+  .hero-description {
+    font-size: 18px;
+  }
 
-    .description-title {
-        font-size: 25px;
-    }
+  .hero-text {
+    width: 90%;
+  }
+
+  .description-title {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 340px) {
-    .contact-element span:last-child {
-        display: none;
-    }
+  .contact-element span:last-child {
+    display: none;
+  }
 
-    .footer-container .footer-card:nth-child(2) {
-        width: 100%;
-    }
+  .footer-container .footer-card:nth-child(2) {
+    width: 100%;
+  }
 }

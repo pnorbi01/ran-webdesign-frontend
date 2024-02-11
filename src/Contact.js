@@ -1,52 +1,105 @@
+import {
+  faBrain,
+  faLocationCrosshairs,
+  faMicrophoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { useTranslation } from 'react-i18next';
+import easyComms from "./images/easy-comms.png";
 
 function Contact() {
-
-  const [t, i18n] = useTranslation('global');
-
   return (
-    <section className="contact flex w-full flex-row justify-center items-center text-slate-100 flex-wrap mt-32">
-        <div className="flex flex-col justify-center items-center gap-2 w-full p-3 z-10">
-              <div className="content flex flex-col justify-center items-center gap-2 w-1/2 p-5 relative">
-                  <div className="pseudo-element-contact before:content-['4'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold"></div>
-                  <div className="contact-pseudo-line before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-primary-500"></div>
-                  <h3 className="contact-section-title font-extrabold text-2xl text-center">{t('contact.section-title')}</h3>
-                  <h1 className="description-title text-gray-800 font-extrabold text-4xl text-center">{t('contact.description-title')}</h1>
-                  <span className="description text-gray-400 font-normal text-base text-center">{t('contact.description')}</span>
-                  <span className="description text-gray-400 font-normal text-base text-center">{t('contact.description-part')}</span>
-              </div>
-              <div className="contact-container flex flex-col justify-center items-center w-3/5 rounded-xl divide-y-1 divide-slate-300/25 shadow-2xl">
-                <a href="mailto:info@ranwebdesign.xyz" className="flex flex-row justify-between items-center w-full">
-                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <FontAwesomeIcon icon={faEnvelope} size="1x" className="contactIcon" />
-                      <span className="description text-gray-100 font-normal text-base text-center">{t('contact.email-text')}</span>
-                    </div>
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <span className="description text-gray-100 font-normal text-base text-center">info@ranwebdesign.xyz</span>
-                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
-                    </div>
-                  </div>
-                </a>
-                <a href="tel:0606191925" className="flex flex-row justify-between items-center w-full">
-                  <div className="contact-element flex flex-row justify-between items-center w-full p-5 hover:cursor-pointer">
-                    <div className="flex flex-row justify-center items-center gap-3">
-                      <FontAwesomeIcon icon={faPhone} size="1x" className="contactIcon" />
-                      <span className="description text-gray-100 font-normal text-base text-center">{t('contact.phone-text')}</span>
-                    </div>
-                    <div className="flex flex-row justify-start items-center gap-3">
-                      <span className="description text-gray-100 font-normal text-base text-center">0606191925</span>
-                      <FontAwesomeIcon icon={faArrowRight} size="1x" className="arrowIcon transition-all" />
-                    </div>
-                  </div>
-                </a>
-              </div>
+    <section className="flex flex-col justify-center items-center w-full">
+      <div className="flex flex-col justify-start items-start w-[80%] gap-5">
+        <div className="flex flex-col justify-start items-start">
+          <h3 className="text-[#0d2247] uppercase font-bold text-left tracking-widest">
+            Build faster
+          </h3>
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.7)] to-black font-extrabold text-3xl text-left">
+            See your project like never before.
+          </h1>
         </div>
+        <p className="text-[#3d4e6c] xs:w-full md:w-[50%]">
+          We are committed to providing top-notch expertise and personalized
+          service to ensure your project's success.
+        </p>
+      </div>
+      <div className="flex flex-row justify-center items-flex-start gap-4 w-[80%] flex-wrap bg-blue-100 my-10">
+        <div className="group flex flex-col justify-flex-start items-center p-5 xs:w-[90%] sm:w-[40%] lg:w-1/4 lg:h-[24rem] gap-2 rounded-3xl bg-[#fafafc] hover:shadow-md hover:cursor-pointer transition-all">
+          <div className="flex flex-row justify-center items-center h-1/2 w-full">
+            <img src={easyComms} alt="Easy communication" />
+          </div>
+        </div>
+        <div className="group flex flex-col justify-flex-start items-center p-5 xs:w-[90%] sm:w-[40%] lg:w-1/4 gap-2 rounded-3xl bg-[#fafafc] hover:shadow-md hover:cursor-pointer transition-all">
+          <div className="icon-inner flex flex-row justify-center items-center rounded-2xl w-11 h-11 bg-primary/10 group-hover:bg-[#3B82F6] transition-all">
+            <FontAwesomeIcon
+              icon={faMicrophoneAlt}
+              size="2xl"
+              className="text-[#3B82F6] group-hover:text-white transition-all"
+            />
+          </div>
+          <h3 className="uppercase font-bold text-base text-center text-[#2D7CFC]">
+            Easy communication
+          </h3>
+          <span className="text-[#8b98a5] text-base text-center">
+            Open lines of communication at every step! We appreciate a smooth
+            operation. That's why we always pay special attention to our
+            clients' needs and feedback.
+          </span>
+        </div>
+        <div className="group flex flex-col justify-flex-start items-center p-5 xs:w-[90%] sm:w-[40%] lg:w-1/4 gap-2 rounded-3xl bg-[#fafafc] hover:shadow-md hover:cursor-pointer transition-all">
+          <div className="icon-inner flex flex-row justify-center items-center rounded-2xl w-11 h-11 bg-primary/10 group-hover:bg-[#3B82F6] transition-all">
+            <FontAwesomeIcon
+              icon={faLocationCrosshairs}
+              size="2xl"
+              className="text-[#3B82F6] group-hover:text-white transition-all"
+            />
+          </div>
+          <h3 className="uppercase font-bold text-base text-center text-[#2D7CFC]">
+            Precision
+          </h3>
+          <span className="text-[#8b98a5] text-base text-center">
+            We appreciate craftsmanship and consistently strive to achieve it.
+            We pay meticulous attention to even the smallest details.
+          </span>
+        </div>
+        <div className="group flex flex-col justify-flex-start items-center p-5 xs:w-[90%] sm:w-[40%] lg:w-1/4 gap-2 rounded-3xl bg-[#fafafc] hover:shadow-md hover:cursor-pointer z-10 transition-all">
+          <div className="flex flex-row justify-center items-center rounded-2xl w-11 h-11 bg-primary/10 group-hover:bg-[#3B82F6] transition-all">
+            <FontAwesomeIcon
+              icon={faBrain}
+              size="2xl"
+              className="text-[#3B82F6] group-hover:text-white transition-all"
+            />
+          </div>
+          <h3 className="uppercase font-bold text-base text-center text-[#2D7CFC]">
+            Modern technologies
+          </h3>
+          <span className="text-[#8b98a5] text-base text-center">
+            We are passionate about new technologies and continually keep pace
+            in this ever-evolving industry.
+          </span>
+        </div>
+      </div>
     </section>
   );
 }
 
 export default Contact;
+
+{
+  /* <div className="icon-inner flex flex-row justify-center items-center rounded-2xl w-11 h-11 bg-primary/10 group-hover:bg-[#3B82F6] transition-all">
+            <FontAwesomeIcon
+              icon={faShieldAlt}
+              size="2xl"
+              className="text-[#3B82F6] group-hover:text-white transition-all"
+            />
+          </div>
+          <h3 className="uppercase font-bold text-base text-center text-[#2D7CFC]">
+            Security
+          </h3>
+          <span className="text-[#8b98a5] text-base text-center">
+            As a web development company, we prioritize safety and security. Our
+            commitment to excellence extends to ensuring the safety of your data
+            and online presence.
+          </span> */
+}

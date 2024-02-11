@@ -1,21 +1,16 @@
-import { Chip } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
-import { CheckIcon } from "./CheckIcon";
-import HeroTitle from "./HeroTitle";
-import { motion } from "framer-motion";
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import HeroTitle from "./components/HeroTitle";
 
 function Hero() {
-
-  const [t, i18n] = useTranslation('global');
-
   const scrollToContent = (div) => {
     const section = document.querySelector(`${div}`);
-    if(section) {
-      const yOffset = section.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    if (section) {
+      const yOffset =
+        section.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
     }
-  }
+  };
 
   const handleClickOnWeb = (scrollTo, event) => {
     scrollToContent(scrollTo);
@@ -23,52 +18,26 @@ function Hero() {
   };
 
   return (
-    <section className="hero flex absolute top-0 left-0 h-full w-full flex-col gap-4 justify-center items-center text-slate-100 relative z-10">
-      <div className="hero-text flex flex-row justify-center items-center gap-1 flex-wrap">
-        <Chip
-          endContent={<CheckIcon size={18} />}
-          variant="flat"
-          color="primary"
-        >
-          {t('chip.1')}
-        </Chip>
-        <Chip
-          endContent={<CheckIcon size={18} />}
-          variant="flat"
-          color="primary"
-        >
-          {t('chip.2')}
-        </Chip>
-        <Chip
-          endContent={<CheckIcon size={18} />}
-          variant="flat"
-          color="primary"
-        >
-          {t('chip.3')}
-        </Chip>
-        <Chip
-          endContent={<CheckIcon size={18} />}
-          variant="flat"
-          color="primary"
-        >
-          {t('chip.4')}
-        </Chip>
-      </div>
-      <HeroTitle />
-      <p className="hero-description text-xl text-gray-500 text-center">{t('hero.description')}</p>
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    <section className="flex flex-row justify-center items-center h-screen">
+      <div
+        className="animate-[fadeInBottom_0.5s_ease-in-out] opacity-0 flex flex-col justify-center items-center xs:w-[90%] md:w-2/3 gap-3"
+        style={{
+          animationDelay: "0.80s",
+          animationFillMode: "forwards",
+        }}
       >
-        <Button
-          className="shadow-xl font-bold bg-blue-500 text-blue-500 text-white rounded-full transition-all px-20"
-          size="lg"
-          variant="flat"
-          onClick={(e) => handleClickOnWeb('.contact', e)}
-        >
-          {t('hero.button')}
-        </Button>
-      </motion.div>
+        <HeroTitle />
+        <h1 className="xs:text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[rgba(0,0,0,.7)] to-black text-center pb-1">
+          Build your project with us.
+        </h1>
+        <p className="hero-description text-xl text-[#8b98a5] text-center">
+          Unlock the power of swift and collaborative web development.
+        </p>
+        <div className="group flex flex-row justify-center items-center gap-3 rounded-full py-2 px-5 border-1 border-[#bababa] bg-[#0d2247] backdrop-blur-[10px] hover:cursor-pointer transition-all">
+          <span className="font-bold text-white">Let's talk</span>
+          <HiArrowNarrowRight className="text-white group-hover:translate-x-[3px] transition-all" />
+        </div>
+      </div>
     </section>
   );
 }
