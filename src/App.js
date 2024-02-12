@@ -1,26 +1,25 @@
 import React from "react";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes as Switch,
+} from "react-router-dom";
 import "./App.css";
-import Application from "./Application";
-import Feature from "./Feature";
-import Hero from "./Hero";
-import NavBar from "./NavBar";
-import Service from "./Service";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <div className="h-screen">
-        <Hero />
-      </div>
-      <Feature />
-      <Application />
-      <Service />
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+        </Switch>
+      </Router>
     </>
   );
 }
 
 export default App;
-{
-  /* <Skill /> */
-}

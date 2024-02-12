@@ -7,7 +7,7 @@ function HeroTitle() {
       <div
         className="flex flex-row justify-center items-center animate-[fadeInAndOut_1s_ease-in-out] opacity-0 absolute top-0"
         style={{
-          animationDelay: "1.5s",
+          animationDelay: "1.7s",
           animationFillMode: "forwards",
           animationDuration: "1s",
         }}
@@ -20,7 +20,7 @@ function HeroTitle() {
       <div
         className="flex flex-row justify-center items-center animate-[fadeInAndOut_1s_ease-in-out] opacity-0 absolute top-0"
         style={{
-          animationDelay: "2.5s",
+          animationDelay: "2.7s",
           animationFillMode: "forwards",
           animationDuration: "1s",
         }}
@@ -33,7 +33,7 @@ function HeroTitle() {
       <div
         className="flex flex-row justify-center items-center animate-[fadeInAndOut_1s_ease-in-out] opacity-0 absolute top-0"
         style={{
-          animationDelay: "3.5s",
+          animationDelay: "3.7s",
           animationFillMode: "forwards",
           animationDuration: "1s",
         }}
@@ -46,7 +46,7 @@ function HeroTitle() {
       <div
         className="flex flex-row justify-center items-center animate-[fadeInAndOut_1s_ease-in] opacity-0 absolute top-0"
         style={{
-          animationDelay: "4.5s",
+          animationDelay: "4.7s",
           animationFillMode: "forwards",
           animationDuration: "1s",
         }}
@@ -59,7 +59,7 @@ function HeroTitle() {
       <div
         className="flex flex-row justify-center items-center animate-[fadeInAndStay_1s_ease-in] opacity-0 absolute top-0"
         style={{
-          animationDelay: "5.5s",
+          animationDelay: "5.7s",
           animationFillMode: "forwards",
           animationDuration: "1s",
         }}

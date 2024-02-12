@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Link,
   Navbar,
   NavbarBrand,
@@ -9,85 +8,16 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
-import Cookies from "js-cookie";
 import React from "react";
-import { useTranslation } from "react-i18next";
-import logo from "./images/logo.png";
+import logo from "../assets/images/logo.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useReducer(
     (current) => !current,
     false
   );
-  const [isScrolling, setIsScrolling] = React.useState(false);
-  const initialLocale = Cookies.get("locale");
-  const [selectedKeys, setSelectedKeys] = React.useState(
-    new Set([initialLocale])
-  );
-  const [t, i18n] = useTranslation("global");
-
-  const handleChangeLanguage = (lang) => {
-    Cookies.set("locale", lang);
-    i18n.changeLanguage(lang);
-  };
 
   const menuItems = ["about", "skill", "project", "contact"];
-
-  const selectedValue = React.useMemo(() => {
-    const selectedItemKey = Array.from(selectedKeys)[0]; // First selected key
-
-    if (selectedItemKey) {
-      const selectedFlagSrc = {
-        en: "https://flagcdn.com/gb.svg",
-        hu: "https://flagcdn.com/hu.svg",
-        sr: "https://flagcdn.com/rs.svg",
-      }[selectedItemKey];
-      const selectedCountryName = {
-        en: "English",
-        hu: "Hungarian",
-        sr: "Serbian",
-      }[selectedItemKey];
-
-      return (
-        <div className="flex flex-row justify-center items-center gap-1">
-          <Avatar
-            alt={selectedCountryName}
-            className="w-6 h-6"
-            src={selectedFlagSrc}
-          />{" "}
-          {selectedCountryName}
-        </div>
-      );
-    }
-
-    return ""; // Empty string, if nothing is selected
-  }, [selectedKeys]);
-
-  const scrollToContent = (div) => {
-    const section = document.querySelector(`${div}`);
-    if (section) {
-      const yOffset =
-        section.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: yOffset, behavior: "smooth" });
-    }
-  };
-
-  const handleClickOnWeb = (scrollTo, event) => {
-    scrollToContent(scrollTo);
-    event.preventDefault();
-  };
-
-  const handleClickOnPhone = (scrollTo, event) => {
-    setIsMenuOpen(false);
-    setIsScrolling(true);
-
-    setTimeout(() => {
-      setIsScrolling(false);
-      scrollToContent(scrollTo);
-    }, 500);
-
-    event.preventDefault();
-  };
 
   window.onscroll = function () {
     scroll();
@@ -133,36 +63,32 @@ function NavBar() {
           <Link
             href="#"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
-            onClick={(e) => handleClickOnWeb(".about", e)}
           >
-            {t("navbar.about")}
+            About
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             href="#"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
-            onClick={(e) => handleClickOnWeb(".skill", e)}
           >
-            {t("navbar.skill")}
+            Skill
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             href="#"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
-            onClick={(e) => handleClickOnWeb(".project", e)}
           >
-            {t("navbar.project")}
+            Project
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             href="#"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
-            onClick={(e) => handleClickOnWeb(".contact", e)}
           >
-            {t("navbar.contact")}
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -173,13 +99,12 @@ function NavBar() {
               className="w-full animate-[fadeIn_0.5s_ease-in-out] opacity-0 text-black-50 font-bold text-2xl text-center"
               href="#"
               size="lg"
-              onClick={(e) => handleClickOnPhone("." + item, e)}
               style={{
                 animationDelay: "0.35s",
                 animationFillMode: "forwards",
               }}
             >
-              {t("navbar." + item)}
+              {item}
             </Link>
           </NavbarMenuItem>
         ))}

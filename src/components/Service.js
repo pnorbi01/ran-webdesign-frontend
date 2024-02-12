@@ -4,7 +4,7 @@ import { HiCode, HiDeviceMobile, HiSupport } from "react-icons/hi";
 function Service() {
   return (
     <section className="flex flex-row justify-center items-center w-full">
-      <div className="flex flex-col justify-center items-center w-[90%] relative">
+      <div className="flex flex-col justify-center items-center w-[90%] relative z-10">
         <div className="before:content-['3'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold bg-[#2D7CFC]"></div>
         <div className="before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-gradient-to-b from-[#fafafc] to-[#2D7CFC]"></div>
         <div className="flex flex-col justify-center items-center gap-2 p-5">
@@ -19,8 +19,8 @@ function Service() {
             of them.
           </span>
         </div>
-        <div className="flex flex-row justify-center items-flex-start xs:flex-wrap md:flex-nowrap w-full p-3">
-          <div className="platform group flex flex-col justify-start items-start w-[400px] p-5 bg-[#0d224708] border-1 border-[#e5e7eb] xs:rounded-t-xl md:rounded-tl-xl md:rounded-bl-xl md:rounded-t-none gap-5 hover:cursor-pointer">
+        <div className="flex flex-row justify-center items-flex-start xs:flex-wrap md:flex-nowrap w-full p-3 z-10">
+          <div className="platform group flex flex-col justify-start items-start w-[400px] min-h-[250px] p-5 bg-[#0d224708] border-1 border-[#e5e7eb] xs:rounded-t-xl md:rounded-tl-xl md:rounded-bl-xl md:rounded-t-none gap-5 hover:cursor-pointer">
             <div className="flex flex-col justify-start items-start gap-3">
               <div className="platform flex justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl group-hover:bg-[#0d2247] transition-all">
                 <HiCode className="text-[#0d2247] h-8 w-8 group-hover:text-white transition-all" />
@@ -31,7 +31,7 @@ function Service() {
               Individual web development tailored to your needs.
             </p>
           </div>
-          <div className="platform group flex flex-col justify-start items-start w-[400px] p-5 bg-[#0d224708] xs:border-y-0 xs:border-x-1 md:border-y-1 md:border-x-0 border-[#e5e7eb] gap-5 hover:cursor-pointer">
+          <div className="platform group flex flex-col justify-start items-start w-[400px] min-h-[250px] p-5 bg-[#0d224708] xs:border-y-0 xs:border-x-1 md:border-y-1 md:border-x-0 border-[#e5e7eb] gap-5 hover:cursor-pointer z-10">
             <div className="flex flex-col justify-start items-start gap-3">
               <div className="platform flex justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl group-hover:bg-[#0d2247] transition-all">
                 <HiDeviceMobile className="text-[#0d2247] h-8 w-8 group-hover:text-white transition-all" />
@@ -43,7 +43,7 @@ function Service() {
               cross-platform solution.
             </p>
           </div>
-          <div className="platform group flex flex-col justify-start items-start w-[400px] p-5 bg-[#0d224708] border-1 border-[#e5e7eb] xs:rounded-b-xl md:rounded-tr-xl md:rounded-br-xl md:rounded-b-none gap-5 hover:cursor-pointer">
+          <div className="platform group flex flex-col justify-start items-start w-[400px] min-h-[250px] p-5 bg-[#0d224708] border-1 border-[#e5e7eb] xs:rounded-b-xl md:rounded-tr-xl md:rounded-br-xl md:rounded-b-none gap-5 hover:cursor-pointer z-10">
             <div className="flex flex-col justify-start items-start gap-3">
               <div className="platform flex justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl group-hover:bg-[#0d2247] transition-all">
                 <HiSupport className="text-[#0d2247] h-8 w-8 group-hover:text-white transition-all" />
