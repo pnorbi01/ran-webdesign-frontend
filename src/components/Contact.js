@@ -10,6 +10,7 @@ function Contact() {
           src={contact}
           width={450}
           height={300}
+          loading="lazy"
           alt="Get in touch with us"
           className="absolute bottom-0 left-1/2 -translate-x-1/2"
         />

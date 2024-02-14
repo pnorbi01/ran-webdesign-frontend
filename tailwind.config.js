@@ -28,6 +28,8 @@ module.exports = {
           heartBeat: "heartBeat 1s ease-in-out infinite",
           scaleDown: "scaleDown 2s ease-in-out",
           scaleDownMobile: "scaleDownMobile 2s ease-in-out",
+          expandOpacity: "expandOpacity 6s ease-in-out infinite",
+          expand: "expand 6s ease-in-out infinite",
         },
         opacity: {
           80: ".8",
@@ -206,6 +208,31 @@ module.exports = {
             opacity: "1",
             width: "70px",
             height: "70px",
+          },
+        },
+        expandOpacity: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(1)",
+          },
+          "50%": {
+            opacity: "1",
+            transform: "scale(1.3)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "scale(1.2)",
+          },
+        },
+        expand: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.2)",
+          },
+          "100%": {
+            transform: "scale(1)",
           },
         },
       },

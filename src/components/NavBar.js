@@ -17,7 +17,13 @@ function NavBar() {
     false
   );
 
-  const menuItems = ["about", "skill", "project", "contact"];
+  const menuItems = [
+    { name: "Home", value: "home" },
+    { name: "Mobile app", value: "mobile" },
+    { name: "Services", value: "services" },
+    { name: "Skills", value: "skills" },
+    { name: "Contact", value: "contact" },
+  ];
 
   window.onscroll = function () {
     scroll();
@@ -61,10 +67,10 @@ function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="/mobile"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
-            About
+            Mobile app
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -72,15 +78,15 @@ function NavBar() {
             href="#"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
-            Skill
+            Services
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="/skills"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
-            Project
+            Skills
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -97,14 +103,14 @@ function NavBar() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full animate-[fadeIn_0.5s_ease-in-out] opacity-0 text-black-50 font-bold text-2xl text-center"
-              href="#"
+              href={"/" + item.value}
               size="lg"
               style={{
                 animationDelay: "0.35s",
                 animationFillMode: "forwards",
               }}
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
