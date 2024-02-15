@@ -1,6 +1,7 @@
 import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { HiArrowSmRight } from "react-icons/hi";
 import logo from "../assets/images/logo.png";
 
 function Footer() {
@@ -16,30 +17,33 @@ function Footer() {
             </span>
           </div>
           <div className="flex flex-col justify-start items-start">
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              Mobile application
-            </a>
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              Contact
-            </a>
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              Skills
-            </a>
+            <div className="group flex flex-row justify-center items-center gap-1">
+              <a
+                href="/mobile"
+                className="text-[13px] font-semibold leading-6 text-[#0d2247]"
+              >
+                Mobile application
+              </a>
+              <HiArrowSmRight className="text-[#0d2247] group-hover:translate-x-[3px] transition-all" />
+            </div>
+            <div className="group flex flex-row justify-center items-center gap-1">
+              <a
+                href="/contact"
+                className="text-[13px] font-semibold leading-6 text-[#0d2247]"
+              >
+                Contact
+              </a>
+              <HiArrowSmRight className="text-[#0d2247] group-hover:translate-x-[3px] transition-all" />
+            </div>
+            <div className="group flex flex-row justify-center items-center gap-1">
+              <a
+                href="/skills"
+                className="text-[13px] font-semibold leading-6 text-[#0d2247]"
+              >
+                Skills
+              </a>
+              <HiArrowSmRight className="text-[#0d2247] group-hover:translate-x-[3px] transition-all" />
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-start items-start gap-3">
@@ -67,18 +71,24 @@ function Footer() {
             </span>
           </div>
           <div className="flex flex-col justify-start items-start">
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              info@ranwebdesign.xyz
-            </a>
-            <a
-              href="#"
-              className="text-[13px] font-semibold leading-6 text-[#0d2247]"
-            >
-              +381606191925
-            </a>
+            <div className="group flex flex-row justify-center items-center gap-1">
+              <a
+                href="mailto:info@ranwebdesign.xyz"
+                className="text-[13px] font-semibold leading-6 text-[#0d2247]"
+              >
+                info@ranwebdesign.xyz
+              </a>
+              <HiArrowSmRight className="text-[#0d2247] group-hover:translate-x-[3px] transition-all" />
+            </div>
+            <div className="group flex flex-row justify-center items-center gap-1">
+              <a
+                href="tel:+381606191925"
+                className="text-[13px] font-semibold leading-6 text-[#0d2247]"
+              >
+                Make a call
+              </a>
+              <HiArrowSmRight className="text-[#0d2247] group-hover:translate-x-[3px] transition-all" />
+            </div>
           </div>
         </div>
       </div>

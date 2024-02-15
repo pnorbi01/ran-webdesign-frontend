@@ -1,3 +1,4 @@
+import { Link } from "@nextui-org/react";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import contact from "../assets/images/contact.png";
@@ -22,18 +23,24 @@ function Contact() {
           via email. We will reply within 1 day.
         </span>
         <div className="flex flex-row justify-center items-center xs:flex-wrap md:flex-nowrap gap-5">
-          <div className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer">
+          <Link
+            href="tel:+381606191925"
+            className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer"
+          >
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#71717a] to-white to-[50%] font-bold">
               Via phone
             </span>
             <HiArrowNarrowRight className="text-slate-200 group-hover:translate-x-[3px] transition-all" />
-          </div>
-          <div className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer">
+          </Link>
+          <Link
+            href="mailto:info@ranwebdesign.xyz"
+            className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer"
+          >
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#71717a] to-white to-[50%] font-bold">
               Via email
             </span>
             <HiArrowNarrowRight className="text-slate-200 group-hover:translate-x-[3px] transition-all" />
-          </div>
+          </Link>
         </div>
       </div>
     </section>

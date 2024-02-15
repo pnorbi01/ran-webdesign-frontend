@@ -1,5 +1,6 @@
 import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "@nextui-org/react";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
@@ -37,10 +38,13 @@ function Application() {
             />
           </div>
         </div>
-        <div className="group flex flex-row justify-center items-center gap-2 hover:cursor-pointer mb-24">
+        <Link
+          href="/mobile"
+          className="group flex flex-row justify-center items-center gap-2 hover:cursor-pointer mb-24"
+        >
           <span className="text-[#2D7CFC] font-bold">Learn more</span>
           <HiArrowNarrowRight className="text-[#2D7CFC] group-hover:translate-x-[3px] transition-all" />
-        </div>
+        </Link>
       </div>
     </section>
   );

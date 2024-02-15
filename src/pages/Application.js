@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import appHeadline from "../assets/images/app-headline-image.png";
 import diveDeeper from "../assets/images/dive-deeper.png";
+import circles from "../assets/images/hero-bg.png";
 import ApplicationTitle from "../components/ApplicationTitle";
 
 function Application() {
@@ -50,15 +51,21 @@ function Application() {
           Let's learn more about our mobile application development.
         </p>
         <div className="flex flex-row justify-center items-flex-start xs:flex-col xs:justify-start lg:justify-center lg:items-center lg:flex-row w-3/4 xs:min-h-[600px] lg:min-h-[550px]">
-          <div className="flex flex-col justify-center items-start xs:items-center lg:items-start xs:w-full lg:w-1/2 lg:p-4 gap-3">
-            <h1 className="text-[#1d1d1f] font-extrabold xs:text-3xl md:text-4xl xs:text-center lg:text-left">
+          <div className="flex flex-col justify-center items-start xs:items-center lg:items-start xs:w-full lg:w-1/2 lg:p-4 gap-3 relative">
+            <img
+              src={circles}
+              loading="lazy"
+              alt="Blured circles"
+              className="absolute top-[50%] left-[30%] transfrom -translate-y-[50%] -translate-x-[50%] z-0 xs:hidden md:block"
+            />
+            <h1 className="text-[#1d1d1f] font-extrabold xs:text-3xl md:text-4xl xs:text-center lg:text-left z-10">
               Dream it. We'll make it come true.
             </h1>
-            <p className="text-[#1d1d1f] font-normal text-base xs:text-center lg:text-left">
+            <p className="text-[#1d1d1f] font-normal text-base xs:text-center lg:text-left z-10">
               We are developing mobile applications on both <b>iOS</b> and{" "}
               <b>Android</b> platforms. We mainly use <b>React Native</b>.
             </p>
-            <div className="flex flex-row justify-start items-center gap-3 my-3">
+            <div className="flex flex-row justify-start items-center gap-3 my-3 z-10">
               <div className="platform flex flex-row justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
                 <FontAwesomeIcon
                   icon={faAndroid}
@@ -66,7 +73,7 @@ function Application() {
                   className="text-[#0d2247] group-hover:text-white transition-all"
                 />
               </div>
-              <hr className="h-8 w-px bg-[#e5e7eb]" />
+              <hr className="h-8 w-px bg-slate-500/20" />
               <div className="platform flex flex-row justify-center items-center px-3.5 py-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
                 <FontAwesomeIcon
                   icon={faApple}

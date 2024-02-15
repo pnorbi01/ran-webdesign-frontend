@@ -8,6 +8,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Application from "./pages/Application";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/mobile" element={<Application />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Switch>
         <Footer />
       </Router>

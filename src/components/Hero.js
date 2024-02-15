@@ -1,3 +1,4 @@
+import { Link } from "@nextui-org/react";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import HeroTitle from "./HeroTitle";
@@ -25,7 +26,8 @@ function Hero() {
         >
           Unlock the power of swift and collaborative web development.
         </p>
-        <div
+        <Link
+          href="/contact"
           className="group animate-[fadeInBottom_0.5s_ease-in-out] opacity-0 flex flex-row justify-center items-center gap-3 rounded-full py-2 px-5 border-1 border-[#bababa] bg-[#0d2247] backdrop-blur-[10px] hover:cursor-pointer transition-all"
           style={{
             animationDelay: "1.20s",
@@ -34,7 +36,7 @@ function Hero() {
         >
           <span className="font-bold text-white">Let's talk</span>
           <HiArrowNarrowRight className="text-white group-hover:translate-x-[3px] transition-all" />
-        </div>
+        </Link>
       </div>
     </section>
   );

@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       screens: {
         xs: "280px",
+        xsl: "300px",
         xsm: "540px",
         l: "769px",
       },
@@ -45,14 +46,12 @@ module.exports = {
         fadeIn: {
           "0%": {
             opacity: 0,
-            transform: "translateY(15px)",
           },
           "70%": {
             opacity: 0.6,
           },
           "100%": {
             opacity: 1,
-            transform: "translateY(0)",
           },
         },
         fadeInBottom: {

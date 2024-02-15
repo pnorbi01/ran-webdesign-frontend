@@ -20,7 +20,6 @@ function NavBar() {
   const menuItems = [
     { name: "Home", value: "home" },
     { name: "Mobile app", value: "mobile" },
-    { name: "Services", value: "services" },
     { name: "Skills", value: "skills" },
     { name: "Contact", value: "contact" },
   ];
@@ -67,18 +66,18 @@ function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="/mobile"
+            href="/home"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
-            Mobile app
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="/mobile"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
-            Services
+            Mobile app
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -91,7 +90,7 @@ function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="/contact"
             className="navbar-item text-sm text-grey-500 font-bold hover:text-blue-600 hover:cursor-pointer transition-all"
           >
             Contact
@@ -102,7 +101,7 @@ function NavBar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full animate-[fadeIn_0.5s_ease-in-out] opacity-0 text-black-50 font-bold text-2xl text-center"
+              className="w-full animate-[fadeInBottom_0.5s_ease-in-out] opacity-0 text-black-50 font-bold text-2xl text-center"
               href={"/" + item.value}
               size="lg"
               style={{
