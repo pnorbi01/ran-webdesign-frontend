@@ -1,49 +1,71 @@
-import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "@nextui-org/react";
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import iosAppCardImg from "../assets/images/ios-app-card-img.png";
+import androidAppCardImg from "../assets/images/android-app-card-img.png";
+import { AndroidIcon, AppleIcon, MobileIcon } from "../assets/icons/Icons";
+import { Link } from "react-router-dom";
 
 function Application() {
   return (
-    <section className="flex flex-col justify-center items-center w-full my-24">
-      <div className="flex flex-col justify-center items-center gap-2 p-5 xs:w-[90%] md:w-1/2 relative z-10">
-        <div className="before:content-['2'] absolute py-2 px-3.5 -top-8 text-white rounded-full font-bold bg-[#2D7CFC]"></div>
-        <div className="before:content-[''] rounded-lg absolute -top-32 h-24 w-px bg-gradient-to-b from-[#f8fbff] to-[#2D7CFC]"></div>
-        <h3 className="font-extrabold text-xl text-center bg-clip-text text-transparent bg-gradient-to-r from-[#2D7CFC] to-[#71B9F5]">
-          Mobile application
-        </h3>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-br from-[rgba(0,0,0,.7)] to-black font-extrabold text-3xl text-center">
-          Everything you need. Nothing you don’t.
-        </h1>
-        <span className="text-[#8b98a5] font-normal text-base text-center sm:w-[80%] md:w-[75%] lg:w-[80%]">
-          Partner with us to design and develop your custom mobile app in{" "}
-          <span className="text-[#2D7CFC] font-bold">React Native</span>. Let's
-          turn your vision into a reality!
-        </span>
-        <div className="flex flex-row justify-start items-center gap-3 my-3 z-10">
-          <div className="platform flex flex-row justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
-            <FontAwesomeIcon
-              icon={faAndroid}
-              size="2xl"
-              className="text-[#0d2247] group-hover:text-white transition-all"
-            />
+    <section className="flex flex-row justify-center items-center w-full my-24">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] z-10 space-y-10">
+        <div className="flex flex-col justify-center items-center xs:W-full lg:w-1/2 2xl:w-1/3 space-y-5">
+          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
+            <span className="font-bold text-md text-center text-neutral-500">
+              Application
+            </span>
           </div>
-          <hr className="h-8 w-px bg-[#e5e7eb]" />
-          <div className="platform flex flex-row justify-center items-center px-3.5 py-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
-            <FontAwesomeIcon
-              icon={faApple}
-              size="2xl"
-              className="text-[#0d2247] group-hover:text-white transition-all"
-            />
+          <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
+            Everything you need, nothing you don't.
+          </span>
+        </div>
+        <div className="flex flex-row justify-center items-flex-start xs:flex-wrap lg:flex-nowrap w-full gap-5">
+          <div className="flex flex-col justify-start items-start rounded-2xl bg-[#ffffff0d] gap-5 backdrop-blur xs:w-full xl:w-1/2 2xl:w-1/3">
+            <div className="flex flex-row justify-start items-center gap-2 pt-5 px-5">
+              <AndroidIcon size={25} />
+              <span className="text-white font-semibold text-2xl">
+                Android app
+              </span>
+            </div>
+            <span className="text-[#c1bfc7] px-5">
+              Specializing in Android app development, we harness the power of
+              the platform to create innovative mobile solutions.
+            </span>
+            <div className="w-full rounded-b-2xl">
+              <img
+                src={androidAppCardImg}
+                alt="Android app"
+                loading="lazy"
+                className="rounded-b-2xl w-full object-fit"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col justify-start items-start rounded-2xl bg-[#ffffff0d] gap-5 backdrop-blur xs:w-full xl:w-1/2 2xl:w-1/3">
+            <div className="flex flex-row justify-start items-center gap-2 pt-5 px-5">
+              <AppleIcon size={25} />
+              <span className="text-white font-semibold text-2xl">iOS app</span>
+            </div>
+            <span className="text-[#c1bfc7] px-5">
+              Similarly, for iOS, we bring our expertise to deliver
+              high-quality, user-centric experiences tailored for Apple devices.
+            </span>
+            <div className="w-full rounded-b-2xl">
+              <img
+                src={iosAppCardImg}
+                alt="iOS app"
+                loading="lazy"
+                className="rounded-b-2xl w-full object-fit"
+              />
+            </div>
           </div>
         </div>
         <Link
-          href="/mobile"
-          className="group flex flex-row justify-center items-center gap-2 hover:cursor-pointer mb-24"
+          to="/mobile"
+          className="flex flex-row justify-center items-center gap-2 p-3 rounded-lg bg-[#5860CF] btn-shadow hover:cursor-pointer xs:w-full md:w-auto"
         >
-          <span className="text-[#2D7CFC] font-bold">Learn more</span>
-          <HiArrowNarrowRight className="text-[#2D7CFC] group-hover:translate-x-[3px] transition-all" />
+          <MobileIcon size={25} color={"#FFF"} />
+          <span className="font-normal text-md text-white">
+            More about apps
+          </span>
         </Link>
       </div>
     </section>

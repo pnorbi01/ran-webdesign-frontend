@@ -1,20 +1,28 @@
-import {
-  faAndroid,
-  faApple,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import appHeadline from "../assets/images/app-headline-image.png";
-import diveDeeper from "../assets/images/dive-deeper.png";
-import circles from "../assets/images/hero-bg.png";
 import ApplicationTitle from "../components/ApplicationTitle";
+import bgImage from "../assets/images/bgImage.webp";
+import {
+  FireIcon,
+  DollarIcon,
+  RocketIcon,
+  CodeIcon,
+  MobileIcon,
+  ScaleIcon,
+  ChartIcon,
+  UserGearIcon,
+  UserArrowIcon,
+  BulbIcon,
+  UsersIcon,
+  UpdateIcon,
+} from "../assets/icons/Icons";
+import iosAppCardImg from "../assets/images/ios-app-card-img.png";
 
 function Application() {
   return (
-    <section className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-5 mt-20">
-        <div className="flex flex-col justify-center items-center gap-2">
+    <section className="flex flex-col justify-center items-center w-full relative">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] mt-20 z-10 space-y-20">
+        <div className="flex flex-col justify-center items-center gap-5">
           <img
             src={appHeadline}
             loading="lazy"
@@ -25,142 +33,172 @@ function Application() {
               animationFillMode: "forwards",
             }}
           />
-        </div>
-        <ApplicationTitle />
-        <h1 className="font-bold xs:text-5xl xsm:text-6xl md:text-7xl text-[#1d1d1f] text-center xs:w-[90%] md:w-[70%]">
-          Everything you need. Nothing you don't.
-        </h1>
-        <p className="font-bold text-[#8b98a5] text-center xs:w-[80%] lg:w-[35%]">
-          Unleash the power of mobile application development.
-        </p>
-      </div>
-      <div className="flex flex-col justify-center items-center w-full gap-3 mt-24">
-        <div className="flex flex-row justify-center items-center xs:w-full md:w-3/4">
-          <img
-            src={diveDeeper}
-            loading="lazy"
-            width={50}
-            height={50}
-            alt="Dive deeper"
-          />
-          <h1 className="font-bold xs:text-4xl md:text-5xl text-[#1d1d1f] text-center">
-            Dive Deeper.
+          <ApplicationTitle />
+          <h1 className="font-bold xs:text-5xl xsm:text-6xl md:text-7xl text-white text-center xs:w-[90%] md:w-[70%]">
+            Everything you need. Nothing you don't*
           </h1>
+          <p className="text-[#8b98a5] text-xl text-center xs:w-[80%] lg:w-[35%]">
+            Unleash the power of mobile application development.
+          </p>
         </div>
-        <p className="font-bold text-[#8b98a5] text-center xs:w-[80%] lg:w-[35%]">
-          Let's learn more about our mobile application development.
-        </p>
-        <div className="flex flex-row justify-center items-flex-start xs:flex-col xs:justify-start lg:justify-center lg:items-center lg:flex-row w-3/4 xs:min-h-[600px] lg:min-h-[550px]">
-          <div className="flex flex-col justify-center items-start xs:items-center lg:items-start xs:w-full lg:w-1/2 lg:p-4 gap-3 relative">
-            <img
-              src={circles}
-              loading="lazy"
-              alt="Blured circles"
-              className="absolute top-[50%] left-[30%] transfrom -translate-y-[50%] -translate-x-[50%] z-0 xs:hidden md:block"
-            />
-            <h1 className="text-[#1d1d1f] font-extrabold xs:text-3xl md:text-4xl xs:text-center lg:text-left z-10">
-              Dream it. We'll make it come true.
-            </h1>
-            <p className="text-[#1d1d1f] font-normal text-base xs:text-center lg:text-left z-10">
-              We are developing mobile applications on both <b>iOS</b> and{" "}
-              <b>Android</b> platforms. We mainly use <b>React Native</b>.
-            </p>
-            <div className="flex flex-row justify-start items-center gap-3 my-3 z-10">
-              <div className="platform flex flex-row justify-center items-center p-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
-                <FontAwesomeIcon
-                  icon={faAndroid}
-                  size="2xl"
-                  className="text-[#0d2247] group-hover:text-white transition-all"
-                />
+        <div className="flex flex-row justify-center items-flex-start xs:flex-wrap lg:flex-nowrap mt-10 xs:w-full 2xl:w-2/3 gap-5">
+          <div className="bg-line card-border flex flex-col justify-start items-start p-5 gap-3 bg-[#0b0b17] rounded-2xl xs:w-full xl:w-1/2 2xl:w-1/3">
+            <RocketIcon size={40} color={"#004C72"} />
+            <span className="text-[#c1bfc7] font-semibold text-lg">
+              The mobile app catapults your business into the modern era with
+              cutting-edge solutions and technologies.
+            </span>
+          </div>
+          <div className="bg-line card-border flex flex-col justify-start items-start p-5 gap-3 bg-[#0b0b17] rounded-2xl xs:w-full xl:w-1/2 2xl:w-1/3">
+            <CodeIcon size={40} color={"#004C72"} />
+            <span className="text-[#c1bfc7] font-semibold text-lg">
+              If you're struggling to find the perfect software fit and require
+              a custom system that can seamlessly handle a high volume of users,
+              you're in the right spot
+            </span>
+          </div>
+          <div className="bg-line card-border flex flex-col justify-start items-start p-5 gap-3 bg-[#0b0b17] rounded-2xl xs:w-full xl:w-1/2 2xl:w-1/3">
+            <DollarIcon size={40} color={"#004C72"} />
+            <span className="text-[#c1bfc7] font-semibold text-lg">
+              Is your competitor already utilizing a mobile app to cut costs or
+              enhance user experience? Reach out to us, and we'll assist you in
+              achieving the same!
+            </span>
+          </div>
+        </div>
+        <div className="flex flex-col justify-start items-center xs:w-full space-y-10">
+          <div className="flex flex-col justify-center items-center gap-5 xs:w-full xl:w-1/2">
+            <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
+              <span className="font-bold text-md text-center text-neutral-500">
+                Dive Deeper
+              </span>
+            </div>
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
+              Dream it. We'll make it come true
+            </span>
+          </div>
+          <div className="flex flex-col justify-center items-flex-start mt-10 xs:w-full 2xl:w-2/3">
+            <div className="flex flex-row justify-between items-start xs:flex-wrap md:flex-nowrap xs:gap-0 md:gap-5 bg-[#ffffff0d] backdrop-blur rounded-t-2xl w-full">
+              <div className="flex flex-col justify-start items-start xs:w-full md:w-1/3 gap-3 p-5 ">
+                <MobileIcon size={40} color={"#004C72"} />
+                <span className="text-[#c1bfc7] font-semibold text-lg">
+                  Android and iOS mobile app development
+                </span>
               </div>
-              <hr className="h-8 w-px bg-slate-500/20" />
-              <div className="platform flex flex-row justify-center items-center px-3.5 py-2 bg-[#0d224708] border-1 border-[#e5e7eb] rounded-2xl">
-                <FontAwesomeIcon
-                  icon={faApple}
-                  size="2xl"
-                  className="text-[#0d2247] group-hover:text-white transition-all"
-                />
+              <div className="flex flex-col justify-start items-start xs:w-full md:w-1/3 gap-3 xs:px-5 md:p-5 ">
+                <ScaleIcon size={40} color={"#004C72"} />
+                <span className="text-[#c1bfc7] font-semibold text-lg">
+                  Scalable solutions
+                </span>
+              </div>
+              <div className="flex flex-col justify-start items-start xs:w-full md:w-1/3 gap-3 p-5 ">
+                <FireIcon size={40} color={"#004C72"} />
+                <span className="text-[#c1bfc7] font-semibold text-lg">
+                  Outpaced by the competition? We can help you catch up!
+                </span>
               </div>
             </div>
-          </div>
-          <div className="flex flex-row justify-center items-center xs:w-full xs:h-[300px] lg:w-1/2 p-5 relative">
-            <div
-              className="animate-[expandOpacity_6s_ease-in-out_infinite] opacity-0 w-[230px] h-[230px] rounded-full border-[px] border-[#0077881a] bg-gradient-to-br from-[#0077881a] from-[20%] to-white to-[100%] absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "3s",
-                animationPlayState: "running",
-              }}
-            ></div>
-            <div
-              className="animate-[expandOpacity_6s_ease-in-out_infinite] opacity-0 w-[150px] h-[150px] rounded-full border-[px] border-[#0077881a] bg-gradient-to-br from-[#0077881a] from-[20%] to-white to-[100%] absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "2s",
-                animationPlayState: "running",
-              }}
-            ></div>
-            <div
-              className="flex flex-row justify-center items-center animate-[expand_6s_ease-in-out_infinite] w-[100px] h-[100px] rounded-full border-[px] border-[#0077881a] bg-gradient-to-br from-[#0077881a] from-[40%] to-white to-[100%] absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "1s",
-                animationPlayState: "running",
-              }}
-            >
-              <FontAwesomeIcon
-                icon={faReact}
-                size="2xl"
-                className="w-14 h-14 text-[#007788]"
+            <div className="w-full rounded-b-2xl">
+              <img
+                src={iosAppCardImg}
+                alt="iOS app"
+                loading="lazy"
+                className="rounded-b-2xl w-full"
               />
             </div>
           </div>
         </div>
+        <div className="flex flex-col justify-start items-center xs:w-full space-y-10">
+          <div className="flex flex-col justify-center items-center gap-5 xs:w-full xl:w-1/2">
+            <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
+              <span className="font-bold text-md text-center text-neutral-500">
+                Solutions
+              </span>
+            </div>
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
+              Meet the solutions that we offer
+            </span>
+          </div>
+          <div className="flex flex-row justify-center items-flex-start xs:flex-wrap xl:flex-nowrap w-full gap-5">
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <UserArrowIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                Flexible technological capacity tailored to customer
+                requirements
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <UserGearIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                Tailored process customized to your needs
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <MobileIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                Responsive UX/UI
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <ChartIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                IT + Business Approach
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-start items-center xs:w-full space-y-10">
+          <div className="flex flex-col justify-center items-center gap-5 xs:w-full xl:w-1/2">
+            <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
+              <span className="font-bold text-md text-center text-neutral-500">
+                Problems
+              </span>
+            </div>
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
+              Common problems our customers come to us in case of mobile app
+              development
+            </span>
+          </div>
+          <div className="flex flex-row justify-center items-flex-start xs:flex-wrap xl:flex-nowrap w-full gap-5">
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <MobileIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                I require a superior mobile app; the current one doesn't meet my
+                business requirements.
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <BulbIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                I have a clear idea and need a development team to bring it to
+                life.
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <UsersIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                I'm considering hiring external developers for a project.
+              </span>
+            </div>
+            <div className="bg-line flex flex-col justify-start items-center p-4 gap-3 rounded-xl bg-[#ffffff0d] backdrop-blur xs:w-full md:w-1/3 xl:w-1/5">
+              <UpdateIcon size={35} color={"#004C72"} />
+              <span className="text-[#c1bfc7] font-semibold text-md text-center">
+                I'm looking to enhance my current mobile app.
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
+      <img
+        src={bgImage}
+        alt="BG"
+        loading="lazy"
+        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
+        sizes="calc(50vw - 40px)"
+        decoding="async"
+      />
     </section>
   );
 }
 
 export default Application;
-
-{
-  /* <div className="app-development flex flex-col justify-start items-center xs:w-full md:w-3/4 xs:min-h-[500px] xsm:min-h-[550px] sm:min-h-[650px] xs:rounded-none md:rounded-[3rem] mt-8 p-10">
-          <div className="flex flex-col justify-center items-center xs:w-full sm:w-[60%] md:w-[80%] lg:w-1/2 gap-2">
-            <h1 className="text-white font-extrabold xs:text-3xl md:text-5xl text-center">
-              Dream it. We'll make it come true.
-            </h1>
-            <p className="text-white font-normal text-base text-center">
-              We are developing mobile applications on both <b>iOS</b> and{" "}
-              <b>Android</b> platforms. We mainly use <b>React Native</b>.
-            </p>
-          </div>
-          <div className="flex flex-row justify-center items-center h-[400px] w-full relative">
-            <div
-              className="animate-[expandOpacity_6s_ease-in-out_infinite] opacity-0 w-[230px] h-[230px] rounded-full border-1 border-white/10 bg-transparent absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "3s",
-                animationPlayState: "running",
-              }}
-            ></div>
-            <div
-              className="platform animate-[expandOpacity_6s_ease-in-out_infinite] opacity-0 w-[150px] h-[150px] rounded-full border-1 border-white/10 bg-transparent absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "2s",
-                animationPlayState: "running",
-              }}
-            ></div>
-            <div
-              className="ring flex flex-row justify-center items-center animate-[expand_6s_ease-in-out_infinite] w-[100px] h-[100px] rounded-full border-1 border-[#e5e7eb] absolute -translate-y-1/2 -translate-x-1/2"
-              style={{
-                animationDelay: "1s",
-                animationPlayState: "running",
-              }}
-            >
-              <img
-                src={logo}
-                alt="RAN Webdesign"
-                loading="lazy"
-                width={40}
-                height={40}
-              />
-            </div>
-          </div>
-        </div> */
-}

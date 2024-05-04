@@ -11,12 +11,14 @@ module.exports = {
       screens: {
         xs: "280px",
         xsl: "300px",
+        xsxl: "400px",
         xsm: "540px",
         l: "769px",
       },
       keyframes: {
         animation: {
-          rotate: "rotate 15s ease-in-out infinite",
+          growAndFade: "growAndFade 1s ease-in-out",
+          grow: "grow 1s ease-in-out",
           fadeIn: "fadeIn 0.5s ease-in-out",
           fadeInBottom: "fadeInBottom 0.5s ease-in-out",
           fadeInTop: "fadeInTop 0.5s ease-in-out",
@@ -31,17 +33,31 @@ module.exports = {
           scaleDownMobile: "scaleDownMobile 2s ease-in-out",
           expandOpacity: "expandOpacity 6s ease-in-out infinite",
           expand: "expand 6s ease-in-out infinite",
+          heroFadeIn: "heroFadeIn 1s ease-in",
+        },
+        growAndFade: {
+          "0%": {
+            transform: "scale(0)",
+            opacity: 0,
+          },
+          "50%": {
+            transform: "scale(1.2)",
+          },
+          "100%": {
+            transform: "scale(1)",
+            opacity: 1,
+          },
+        },
+        grow: {
+          "0%": {
+            height: 0,
+          },
+          "100%": {
+            height: "7rem",
+          },
         },
         opacity: {
           80: ".8",
-        },
-        rotate: {
-          "0%": {
-            transform: "rotate(0deg)",
-          },
-          "100%": {
-            transform: "rotate(1turn)",
-          },
         },
         fadeIn: {
           "0%": {
@@ -52,6 +68,16 @@ module.exports = {
           },
           "100%": {
             opacity: 1,
+          },
+        },
+        heroFadeIn: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.95)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
           },
         },
         fadeInBottom: {

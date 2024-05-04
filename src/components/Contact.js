@@ -1,46 +1,52 @@
-import { Link } from "@nextui-org/react";
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import contact from "../assets/images/contact.png";
+import {
+  UpRightArrowIcon,
+  EnvelopeIcon,
+  ContactIcon,
+  MobileIcon,
+} from "../assets/icons/Icons";
 
 function Contact() {
   return (
-    <section className="flex flex-row justify-center items-center w-full">
-      <div className="contact platform flex flex-col justify-start items-center xs:w-full md:w-[70%] xs:rounded-none md:rounded-[3rem] min-h-[680px] my-24 p-10 gap-5 relative">
-        <img
-          src={contact}
-          width={450}
-          height={300}
-          loading="lazy"
-          alt="Get in touch with us"
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
-        />
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold text-5xl text-center">
-          Get in touch with us.
-        </h1>
-        <span className="text-[#8b98a5] font-normal text-base text-center xs:w-full sm:w-[80%] md:w-[80%] lg:w-[60%]">
-          Do you have a project idea? Feel free to contact us either on phone or
-          via email. We will reply within 1 day.
-        </span>
-        <div className="flex flex-row justify-center items-center xs:flex-wrap md:flex-nowrap gap-5">
-          <Link
-            href="tel:+381606191925"
-            className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer"
-          >
-            <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#71717a] to-white to-[50%] font-bold">
-              Via phone
+    <section className="flex flex-row justify-center items-center w-full my-24">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] z-10 space-y-10">
+        <div className="flex flex-row justify-center items-flex-start xs:flex-wrap lg:flex-nowrap xs:w-full 2xl:w-[80%]">
+          <div className="bg-line flex flex-col justify-start items-center p-5 py-10 gap-3 bg-[#ffffff0d] border border-[#363541] backdrop-blur rounded-2xl w-full">
+            <ContactIcon size={60} />
+            <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
+              Get in touch with us
             </span>
-            <HiArrowNarrowRight className="text-slate-200 group-hover:translate-x-[3px] transition-all" />
-          </Link>
-          <Link
-            href="mailto:info@ranwebdesign.xyz"
-            className="group flex flex-row justify-center items-center p-2 px-10 rounded-full bg-[#00eebe4f] gap-2 hover:cursor-pointer"
-          >
-            <span className="bg-clip-text text-transparent bg-gradient-to-br from-[#71717a] to-white to-[50%] font-bold">
-              Via email
+            <span className="text-[#c1bfc7] font-bold text-lg text-center">
+              If you have any questions, feel free to contact us, we are happy
+              to help!
             </span>
-            <HiArrowNarrowRight className="text-slate-200 group-hover:translate-x-[3px] transition-all" />
-          </Link>
+            <div className="flex flex-row justify-center items-flex-start xs:flex-wrap md:flex-nowrap xs:w-full xl:w-1/2 gap-5 mt-5">
+              <div className="flex flex-col justify-start items-center bg-[#ffffff0d] backdrop-blur rounded-xl p-3 gap-2 xs:w-full xl:w-1/2">
+                <MobileIcon size={40} />
+                <div className="flex flex-row justify-center items-start gap-1">
+                  <a
+                    href="tel:+381606191925"
+                    className="font-semibold text-white"
+                  >
+                    +381 60 619 1925
+                  </a>
+                  <UpRightArrowIcon size={10} color={"#FFF"} />
+                </div>
+              </div>
+              <div className="flex flex-col justify-start items-center bg-[#ffffff0d] backdrop-blur rounded-xl p-3 gap-2 xs:w-full xl:w-1/2">
+                <EnvelopeIcon size={40} />
+                <div className="flex flex-row justify-center items-start gap-1">
+                  <a
+                    href="mailto:info@ranwebdesign.xyz"
+                    className="font-semibold text-white"
+                  >
+                    info@ranwebdesign.xyz
+                  </a>
+                  <UpRightArrowIcon size={10} color={"#FFF"} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

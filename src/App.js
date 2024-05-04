@@ -11,13 +11,17 @@ import Application from "./pages/Application";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
+import ScrollToTop from "./components/helper/ScrollToTop";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Switch>
+          <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/mobile" element={<Application />} />
