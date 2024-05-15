@@ -1,5 +1,4 @@
 import React from "react";
-import bgImage from "../assets/images/bgImage.webp";
 import bgCircles from "../assets/images/bgCircles.svg";
 import { Link } from "react-router-dom";
 
@@ -25,14 +24,6 @@ function NotFound() {
           404
         </span>
       </div>
-      <img
-        src={bgImage}
-        alt="BG"
-        loading="lazy"
-        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
-        sizes="calc(50vw - 40px)"
-        decoding="async"
-      />
       <img
         src={bgCircles}
         alt="Bg circles"

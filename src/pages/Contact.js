@@ -1,6 +1,5 @@
 import React from "react";
 import contactHeadline from "../assets/images/contact-headline-image.png";
-import bgImage from "../assets/images/bgImage.webp";
 import {
   MobileIcon,
   EnvelopeIcon,
@@ -14,7 +13,7 @@ import contactCardImg from "../assets/images/contact-card-img.png";
 function Contact() {
   return (
     <section className="flex flex-col justify-center items-center relative">
-      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] gap-5 mt-20 z-10">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] gap-5 mt-20 z-10 relative">
         <img
           src={contactHeadline}
           loading="lazy"
@@ -67,6 +66,57 @@ function Contact() {
         <span className="text-white/70 font-normal text-xs">
           Reach us on our social media platforms
         </span>
+        <div className="xs:w-full md:w-2/3 h-[250px] absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="relative w-full h-full">
+            <div
+              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-[10%] bottom-0 h-12 w-[1px] bg-white/50"
+              style={{
+                animationDelay: "3s",
+              }}
+            ></div>
+            <div
+              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-[20%] bottom-0 h-12 w-[1px] bg-white/50"
+              style={{
+                animationDelay: "5s",
+              }}
+            ></div>
+            <div
+              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-1/2 bottom-0 h-12 w-[1px] bg-white/50"
+              style={{
+                animationDelay: "5s",
+              }}
+            ></div>
+            <div
+              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute right-[20%] bottom-0 h-12 w-[1px] bg-white/50"
+              style={{
+                animationDelay: "6s",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="rising-stars xs:w-full md:w-2/3 h-[250px] absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div
+            className="animate-[rising_100s_ease-in-out_infinite] w-[2px] h-[2px]"
+            style={{
+              animationDuration: "100s",
+              animationFillMode: "forwards",
+            }}
+          ></div>
+          <div
+            className="animate-[rising_100s_ease-in-out_infinite] w-[1px] h-[1px]"
+            style={{
+              animationDuration: "150s",
+              animationFillMode: "forwards",
+            }}
+          ></div>
+          <div
+            className="animate-[rising_100s_ease-in-out_infinite] w-[1px] h-[1px]"
+            style={{
+              animationDuration: "200s",
+              animationFillMode: "forwards",
+            }}
+          ></div>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] my-10 z-10">
         <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
@@ -115,14 +165,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      <img
-        src={bgImage}
-        alt="BG"
-        loading="lazy"
-        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
-        sizes="calc(50vw - 40px)"
-        decoding="async"
-      />
+      <div className="background-hero">
+        <div className="hero-gradient"></div>
+      </div>
     </section>
   );
 }

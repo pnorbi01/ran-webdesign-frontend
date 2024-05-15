@@ -1,7 +1,6 @@
 import React from "react";
 import appHeadline from "../assets/images/app-headline-image.png";
 import ApplicationTitle from "../components/ApplicationTitle";
-import bgImage from "../assets/images/bgImage.webp";
 import {
   FireIcon,
   DollarIcon,
@@ -189,14 +188,9 @@ function Application() {
           </div>
         </div>
       </div>
-      <img
-        src={bgImage}
-        alt="BG"
-        loading="lazy"
-        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
-        sizes="calc(50vw - 40px)"
-        decoding="async"
-      />
+      <div className="background-hero">
+        <div className="hero-gradient"></div>
+      </div>
     </section>
   );
 }

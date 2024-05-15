@@ -9,11 +9,10 @@ import skillHeadline from "../assets/images/skill-headline-image.png";
 import smooth from "../assets/images/smooth.svg";
 import unique from "../assets/images/unique.svg";
 import userFriendly from "../assets/images/user-friendly.svg";
-import bgImage from "../assets/images/bgImage.webp";
 
 function Skills() {
   return (
-    <section className="flex flex-col justify-center items-center relative">
+    <section className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-5 mt-20 z-10">
         <div className="flex flex-col justify-center items-center gap-2">
           <img
@@ -175,14 +174,9 @@ function Skills() {
           />
         </div>
       </div>
-      <img
-        src={bgImage}
-        alt="BG"
-        loading="lazy"
-        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
-        sizes="calc(50vw - 40px)"
-        decoding="async"
-      />
+      <div className="background-hero">
+        <div className="hero-gradient"></div>
+      </div>
     </section>
   );
 }

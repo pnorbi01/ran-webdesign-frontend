@@ -48,7 +48,7 @@ function NavBar() {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="navbar fixed backdrop-filter-none bg-transparent"
+      className="navbar fixed bg-transparent"
     >
       <NavbarContent className="flex flex-row justify-between items-center">
         <NavbarBrand>
@@ -110,6 +110,7 @@ function NavBar() {
                 animationDelay: "0.35s",
                 animationFillMode: "forwards",
               }}
+              onClick={() => setIsMenuOpen()}
             >
               {item.name}
             </Link>

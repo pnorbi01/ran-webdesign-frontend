@@ -34,6 +34,22 @@ module.exports = {
           expandOpacity: "expandOpacity 6s ease-in-out infinite",
           expand: "expand 6s ease-in-out infinite",
           heroFadeIn: "heroFadeIn 1s ease-in",
+          firstWave: "firstWave 3.5s ease-in-out infinite",
+          secondWave: "secondWave 3.5s ease-in-out infinite",
+          thirdWave: "thirdWave 3.5s ease-in-out infinite",
+          technologiesFirstLine: "technologiesFirstLine 3.5s infinite",
+          technologiesSecondLine: "technologiesSecondLine 3.5s infinite",
+          technologiesThirdLine: "technologiesThirdLine 3.5s infinite",
+          technologiesFourthLine: "technologiesFourthLine 3.5s infinite",
+          rising: "rising 100s ease-in-out infinite",
+          starlight: "starlight 7s ease-in-out infinite",
+          lineAnimationTop: "lineAnimationTop 6s ease-in-out infinite",
+          lineAnimationBottom: "lineAnimationBottom 6s ease-in-out infinite",
+          lineAnimationRotateTablet:
+            "lineAnimationRotateTablet 5s ease-in-out infinite",
+          lineAnimationRotateMobile:
+            "lineAnimationRotateMobile 5s ease-in-out infinite",
+          lightAnimation: "lightAnimation 5s ease infinite",
         },
         growAndFade: {
           "0%": {
@@ -258,6 +274,146 @@ module.exports = {
           },
           "100%": {
             transform: "scale(1)",
+          },
+        },
+        firstWave: {
+          "0%": {
+            opacity: 1,
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "90%, 100%": {
+            opacity: 0,
+            transform: "translate(-50%, -50%) scale(5)",
+          },
+        },
+        secondWave: {
+          "0%": {
+            opacity: 1,
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "68%, 100%": {
+            opacity: 0,
+            transform: "translate(-50%, -50%) scale(4)",
+          },
+        },
+        thirdWave: {
+          "0%": {
+            opacity: 1,
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "71%, 100%": {
+            opacity: 0,
+            transform: "translate(-50%, -50%) scale(3)",
+          },
+        },
+        technologiesFirstLine: {
+          "0%": {
+            opacity: 0,
+          },
+          "20%": {
+            opacity: 1,
+          },
+          "86%, 100%": {
+            opacity: 0,
+            transform: "translateY(-250px)",
+          },
+        },
+        technologiesSecondLine: {
+          "0%": {
+            opacity: 0,
+          },
+          "20%": {
+            opacity: 1,
+          },
+          "86%, 100%": {
+            opacity: 0,
+            transform: "translateY(250px)",
+          },
+        },
+        technologiesThirdLine: {
+          "0%": {
+            opacity: 0,
+          },
+          "20%": {
+            opacity: 1,
+          },
+          "86%, 100%": {
+            opacity: 0,
+            transform: "translateX(250px)",
+          },
+        },
+        technologiesFourthLine: {
+          "0%": {
+            opacity: 0,
+          },
+          "20%": {
+            opacity: 1,
+          },
+          "86%, 100%": {
+            opacity: 0,
+            transform: "translateX(-250px)",
+          },
+        },
+        rising: {
+          "0%": {
+            transform: "translateZ(0) translateY(0)",
+          },
+          "100%": {
+            transform: "translateZ(0) translateY(-2000px)",
+          },
+        },
+        starlight: {
+          "15%, 100%": {
+            opacity: 0,
+            transform: "translateY(-350px)",
+          },
+          "0%": {
+            opacity: 0,
+          },
+          "10%": {
+            opacity: 1,
+          },
+        },
+        lineAnimationTop: {
+          "0%, 100%": {
+            transform: "translateY(-200px)",
+          },
+          "99%": {
+            transform: "translateY(760px)",
+          },
+        },
+        lineAnimationBottom: {
+          "0%, 100%": {
+            transform: "translateY(530px)",
+          },
+          "99%": {
+            transform: "translateY(-800px)",
+          },
+        },
+        lineAnimationRotateTablet: {
+          "0%": {
+            transform: "translateY(200px) rotate(-180deg)",
+          },
+          "60%, 100%": {
+            transform: "translateY(200px) rotate(-360deg)",
+          },
+        },
+        lineAnimationRotateMobile: {
+          "0%": {
+            transform: "translateY(100px) rotate(-180deg)",
+          },
+          "60%, 100%": {
+            transform: "translateY(100px) rotate(-360deg)",
+          },
+        },
+        lightAnimation: {
+          "0%, 100%": {
+            opacity: 0.5,
+            transform: "scale(1)",
+          },
+          "65%": {
+            opacity: 1,
+            transform: "scaleX(1.05)",
           },
         },
       },

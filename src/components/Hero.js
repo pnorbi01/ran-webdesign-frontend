@@ -1,5 +1,4 @@
 import React from "react";
-import bgImage from "../assets/images/bgImage.webp";
 import bgCircles from "../assets/images/bgCircles.svg";
 import logo from "../assets/images/logo.png";
 import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -20,7 +19,7 @@ import {
 
 function Hero() {
   return (
-    <section className="hero flex flex-row justify-center xs:items-start l:items-start min-h-min relative">
+    <section className="flex flex-row justify-center xs:items-start l:items-start min-h-min">
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-2/3 gap-3 xs:mt-32 gap-5 z-10">
         <>
           <div className="flex flex-row justify-center items-center bg-[#050407] rounded-md p-1 px-2">
@@ -51,7 +50,7 @@ function Hero() {
         </>
         <div className="h-28">
           <div
-            className="animate-[grow_1s_ease-in-out] w-[1px] bg-white rounded-full"
+            className="animate-[grow_1s_ease-in-out] w-[1px] bg-[#f3eeff1f] rounded-full"
             style={{
               animationDelay: "1s",
               animationFillMode: "forwards",
@@ -59,7 +58,7 @@ function Hero() {
           />
         </div>
         <div
-          className="animate-[growAndFade_1s_ease-in-out] opacity-0 flex flex-row justify-center items-flex-start border border-[#363541] w-auto p-3 rounded-md"
+          className="animate-[growAndFade_1s_ease-in-out] opacity-0 flex flex-row justify-center items-flex-start border border-[#f3eeff1f] w-auto p-3 rounded-md"
           style={{
             animationDuration: "1.2s",
             animationDelay: "1.5s",
@@ -184,19 +183,14 @@ function Hero() {
         </div>
       </div>
       <img
-        src={bgImage}
-        alt="BG"
-        loading="lazy"
-        className="bg fixed top-0 right-0 bottom-0 h-full w-full object-cover object-center overflow-clip opacity-60 z-0"
-        sizes="calc(50vw - 40px)"
-        decoding="async"
-      />
-      <img
         src={bgCircles}
         alt="Bg circles"
         loading="lazy"
         className="absolute -top-6 -left-5 h-auto"
       />
+      <div className="background-hero">
+        <div className="hero-gradient"></div>
+      </div>
     </section>
   );
 }

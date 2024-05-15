@@ -11,7 +11,7 @@ function Contact() {
     <section className="flex flex-row justify-center items-center w-full my-24">
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] z-10 space-y-10">
         <div className="flex flex-row justify-center items-flex-start xs:flex-wrap lg:flex-nowrap xs:w-full 2xl:w-[80%]">
-          <div className="bg-line flex flex-col justify-start items-center p-5 py-10 gap-3 bg-[#ffffff0d] border border-[#363541] backdrop-blur rounded-2xl w-full">
+          <div className="bg-line flex flex-col justify-start items-center p-5 py-10 gap-3 bg-[#ffffff0d] backdrop-blur rounded-2xl w-full">
             <ContactIcon size={60} />
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
               Get in touch with us

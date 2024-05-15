@@ -93,7 +93,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-start xs:flex-col xs:items-center md:items-start md:flex-row xs:gap-3 md:gap-0 w-[80%] mb-10 pt-10 border-t-1 border-[#65646b] z-10">
+      <div className="flex flex-row justify-between items-start xs:flex-col xs:items-center md:items-start md:flex-row xs:gap-3 md:gap-0 w-[80%] mb-10 pt-10 border-t-1 border-[#f3eeff1f] z-10">
         <span className="text-[11px] font-semibold leading-6 text-[#65646b]">
           © {currentYear} RAN Webdesign.
         </span>
