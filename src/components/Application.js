@@ -9,9 +9,9 @@ function Application() {
     <section className="flex flex-row justify-center items-center w-full my-24">
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] z-10 space-y-10">
         <div className="flex flex-col justify-center items-center xs:W-full lg:w-1/2 2xl:w-1/3 space-y-5">
-          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
-            <span className="font-bold text-md text-center text-neutral-500">
-              Application
+          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#ffffff0a] px-3 py-1">
+            <span className="font-medium text-md text-center text-white">
+              Mobile Application
             </span>
           </div>
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">

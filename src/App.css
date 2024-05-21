@@ -2,32 +2,21 @@ body {
   background-color: #030014;
 }
 
-.background-hero {
+.contact-card {
+  background-image: url("./assets/images/contact-grid.svg");
+  background-position: calc(50% + 38%) calc(10% + 10%);
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
+  height: 100%;
 }
 
-.hero-gradient {
-    opacity: 1;
-    -webkit-text-fill-color: inherit;
-    background-image: radial-gradient(circle at 50% 40%, rgba(28, 23, 67, .8), rgba(28, 23, 67, 0) 55%);
-    background-clip: border-box;
-    border-radius: 300px;
-    width: 800px;
-    height: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.contact-card-light {
+  background: radial-gradient(67.49% 100% at 50% 0%, rgba(255, 255, 255, .08) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, .02);
 }
 
 .navbar {
   transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
 .bg-line {
@@ -144,4 +133,58 @@ body {
   height: 100px;
   transition: cubic-bezier(.62,.62,.14,1);
   transform: translateY(-530px);
+}
+
+.line::before {
+    background: linear-gradient(270deg, rgba(61, 53, 78, 0) 28.87%, #3d354e 45.39%, #3d354e 53.54%, rgba(61, 53, 78, 0) 70.06%);
+    top: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.line-light {
+  background: radial-gradient(24.45% 22.45% at 50% 0%, rgba(133, 102, 255, .04) 0%, rgba(133, 102, 255, 0) 100%, rgba(133, 102, 255, 0) 100%), radial-gradient(38.5% 24.47% at 50% 11.59%, rgba(133, 102, 255, .08) 0%, rgba(133, 102, 255, 0) 100%);
+}
+
+.light-circle-bg {
+  background: radial-gradient(72.06% 98.28% at 50% 89.22%, rgba(133,102,255,.1607843137) 0%, rgba(133,102,255,.031372549) 100%), rgba(255, 255, 255, .01);
+}
+
+.icon-bg {
+  background: radial-gradient(198.77% 172.22% at 55.56% 112.78%, rgba(136,125,255,.16) 0%, rgba(136, 125, 255, 0) 100%), rgba(113,61,255,.16);
+  box-shadow: 0 1px 1px #bab3ff0f, 0 -1px 1px #bab3ff0a, 0 0 12px #0a01183d, 0 0 16px #bab3ff33 inset, 0 1px 10px 1px #bab3ff1a inset, 0 4px 16px #271d864d inset;
+}
+
+.circle-bg {
+  background: radial-gradient(86.86% 86.86% at 50% 111.67%, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(198.77% 172.22% at 55.56% 112.78%, rgba(136, 125, 255, .5) 0%, rgba(136, 125, 255, 0) 100%), #713DFF;
+    box-shadow: 0 0 12px 4px #4520a852 inset, 0 0 32px 2px #8566ff3d, inset 0 0 0 2px #0a011833;
+}
+
+.contact-hero-line-first {
+  background-image: url("./assets/images/contact-hero-line1-mask.png");
+  mask-size: cover;
+  mask-image: url("./assets/images/contact-hero-line1-mask.png");
+}
+
+.contact-hero-line-first div {
+  background: linear-gradient(180deg, #7852FE 0, #7852FE 100%, #7852FE 100%, #7852FE 0%);
+  height: 109px;
+  transition: cubic-bezier(.62,.62,.14,1);
+  transform: translateX(-350px);
+}
+
+.contact-hero-line-second {
+  background-image: url("./assets/images/contact-hero-line2-mask.png");
+  mask-size: cover;
+  mask-image: url("./assets/images/contact-hero-line2-mask.png");
+}
+
+.contact-hero-line-second div {
+  background: linear-gradient(180deg, #7852FE 0, #7852FE 100%, #7852FE 100%, #7852FE 0%);
+  height: 109px;
+  transition: cubic-bezier(.62,.62,.14,1);
+  transform: translateX(350px);
 }

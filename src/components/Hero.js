@@ -1,29 +1,16 @@
 import React from "react";
-import bgCircles from "../assets/images/bgCircles.svg";
 import logo from "../assets/images/logo.png";
 import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  ExpoIcon,
-  PhpIcon,
-  JavaIcon,
-  JavaScriptIcon,
-  NodeJsIcon,
-  AppleIcon,
-  AndroidIcon,
-  TailwindIcon,
-  ReactIcon,
-  FireIcon,
-  StarIcon,
-} from "../assets/icons/Icons";
+import homeHero from "../assets/images/home-hero-img.png";
 
 function Hero() {
   return (
-    <section className="flex flex-row justify-center xs:items-start l:items-start min-h-min">
+    <section className="flex flex-col items-center xs:justify-start l:justify-start min-h-min">
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-2/3 gap-3 xs:mt-32 gap-5 z-10">
         <>
-          <div className="flex flex-row justify-center items-center bg-[#050407] rounded-md p-1 px-2">
-            <span className="text-white font-semibold text-md">
+          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#ffffff0a] px-3 py-1">
+            <span className="font-medium text-md text-center text-white">
               Web & Mobile App Development
             </span>
           </div>
@@ -48,49 +35,13 @@ function Hero() {
             Unlock the power of swift and collaborative web development.
           </p>
         </>
-        <div className="h-28">
-          <div
-            className="animate-[grow_1s_ease-in-out] w-[1px] bg-[#f3eeff1f] rounded-full"
-            style={{
-              animationDelay: "1s",
-              animationFillMode: "forwards",
-            }}
-          />
-        </div>
-        <div
-          className="animate-[growAndFade_1s_ease-in-out] opacity-0 flex flex-row justify-center items-flex-start border border-[#f3eeff1f] w-auto p-3 rounded-md"
-          style={{
-            animationDuration: "1.2s",
-            animationDelay: "1.5s",
-            animationFillMode: "forwards",
-          }}
-        >
-          <div className="flex flex-col justify-start items-start w-1/2 gap-2">
-            <FireIcon size={20} />
-            <span className="text-[#757575] text-xs uppercase text-left">
-              10+ finished projects
-            </span>
-          </div>
-          <div className="flex flex-col justify-start items-start w-1/2 gap-2">
-            <div className="flex flex-row justify-start items-center">
-              <StarIcon size={20} />
-              <StarIcon size={20} />
-              <StarIcon size={20} />
-              <StarIcon size={20} />
-              <StarIcon size={20} />
-            </div>
-            <span className="text-[#757575] text-xs uppercase text-left">
-              5 reviews
-            </span>
-          </div>
-        </div>
-        <div className="flex flex-row justify-center items-center w-28 h-10">
+        <div className="flex flex-row justify-center items-center w-28 h-10 z-10">
           <div className="flex flex-row justify-center items-center relative w-full h-full">
             <a
               href="https://www.facebook.com/profile.php?id=61552789026395"
               className="animate-[fadeInLeft_0.5s_ease-in-out] opacity-0 flex justify-center items-center h-12 w-12 rounded-full bg-[#0e0e1b] absolute left-0 top-0 border-2 border-[#363541] z-20"
               style={{
-                animationDelay: "1.9s",
+                animationDelay: "1.5s",
                 animationFillMode: "forwards",
               }}
             >
@@ -103,7 +54,7 @@ function Hero() {
             <div
               className="animate-[fadeInLeft_0.5s_ease-in-out] opacity-0 flex justify-center items-center h-12 w-12 rounded-full bg-[#0e0e1b] absolute left-8 top-0 border-2 border-[#363541] z-10"
               style={{
-                animationDelay: "2.1s",
+                animationDelay: "1.7s",
                 animationFillMode: "forwards",
               }}
             >
@@ -119,7 +70,7 @@ function Hero() {
               href="https://twitter.com/RANWebdesign"
               className="animate-[fadeInLeft_0.5s_ease-in-out] opacity-0 flex justify-center items-center h-12 w-12 rounded-full bg-[#0e0e1b] absolute left-16 top-0 border-2 border-[#363541] z-0"
               style={{
-                animationDelay: "2.3s",
+                animationDelay: "1.9s",
                 animationFillMode: "forwards",
               }}
             >
@@ -132,64 +83,22 @@ function Hero() {
           </div>
         </div>
         <span
-          className="animate-[fadeInTop_0.5s_ease-in-out] opacity-0 text-white/70 font-normal text-xs"
+          className="animate-[fadeInTop_0.5s_ease-in-out] opacity-0 text-white/70 font-normal text-xs z-10"
           style={{
-            animationDelay: "2.5s",
+            animationDelay: "2.1s",
             animationFillMode: "forwards",
           }}
         >
           Reach us on our social media platforms
         </span>
-        <div
-          className="animate-[fadeInTop_0.5s_ease-in-out] opacity-0 flex flex-col justify-center items-center xs:w-full xl:w-1/2 gap-1"
-          style={{
-            animationDelay: "2.8s",
-            animationFillMode: "forwards",
-          }}
-        >
-          <div className="flex flex-row justify-center items-flex-start w-full gap-1">
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <ReactIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <TailwindIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <JavaIcon color={"#737373"} />
-            </div>
-          </div>
-          <div className="flex flex-row justify-center items-flex-start w-full gap-1">
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <AppleIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <AndroidIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <NodeJsIcon color={"#737373"} />
-            </div>
-          </div>
-          <div className="flex flex-row justify-center items-flex-start w-full gap-1">
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <JavaScriptIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <PhpIcon color={"#737373"} />
-            </div>
-            <div className="flex justify-center items-center p-2 bg-[#0e0e1b] w-1/3">
-              <ExpoIcon color={"#737373"} />
-            </div>
-          </div>
-        </div>
       </div>
-      <img
-        src={bgCircles}
-        alt="Bg circles"
-        loading="lazy"
-        className="absolute -top-6 -left-5 h-auto"
-      />
-      <div className="background-hero">
-        <div className="hero-gradient"></div>
+      <div className="relative w-full xs:h-[300px] md:h-[431px] z-0 overflow-hidden">
+        <img
+          src={homeHero}
+          alt="Hero light"
+          loading="lazy"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full object-cover"
+        />
       </div>
     </section>
   );

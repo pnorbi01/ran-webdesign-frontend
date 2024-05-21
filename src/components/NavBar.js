@@ -20,7 +20,6 @@ function NavBar() {
   const menuItems = [
     { name: "Home", value: "home" },
     { name: "Mobile app", value: "mobile" },
-    { name: "Skills", value: "skills" },
     { name: "Contact", value: "contact" },
   ];
 
@@ -80,14 +79,6 @@ function NavBar() {
             className="navbar-item text-sm text-[#8b98a5] font-bold hover:text-slate-100 hover:cursor-pointer transition-all"
           >
             Mobile app
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            to="/skills"
-            className="navbar-item text-sm text-[#8b98a5] font-bold hover:text-slate-100 hover:cursor-pointer transition-all"
-          >
-            Skills
           </Link>
         </NavbarItem>
         <NavbarItem>

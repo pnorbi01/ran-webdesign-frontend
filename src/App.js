@@ -10,7 +10,6 @@ import NavBar from "./components/NavBar";
 import Application from "./pages/Application";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-import Skills from "./pages/Skills";
 import ScrollToTop from "./components/helper/ScrollToTop";
 import NotFound from "./pages/NotFound";
 
@@ -25,7 +24,6 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/mobile" element={<Application />} />
-          <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Switch>
         <Footer />

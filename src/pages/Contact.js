@@ -1,5 +1,4 @@
 import React from "react";
-import contactHeadline from "../assets/images/contact-headline-image.png";
 import {
   MobileIcon,
   EnvelopeIcon,
@@ -9,21 +8,59 @@ import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/images/logo.png";
 import contactCardImg from "../assets/images/contact-card-img.png";
+import heroLight from "../assets/images/hero-light.png";
+import contactHeroLines from "../assets/images/contact-hero-lines.svg";
+import contactHeroHeart from "../assets/images/contact-hero-heart.svg";
 
 function Contact() {
   return (
-    <section className="flex flex-col justify-center items-center relative">
-      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] gap-5 mt-20 z-10 relative">
+    <section className="flex flex-col justify-center items-center w-full overflow-clip">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] gap-5 z-10 mt-24 relative">
         <img
-          src={contactHeadline}
+          src={heroLight}
           loading="lazy"
-          alt="Contact headline"
-          className="xs:animate-[scaleDownMobile_2s_ease-in-out] md:animate-[scaleDown_2s_ease-in-out] opacity-0 w-[70px] h-[70px] drop-shadow-lg transition-all"
-          style={{
-            animationDuration: "1.8s",
-            animationFillMode: "forwards",
-          }}
+          alt="Contact hero light"
+          className="absolute top-0 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-full h-[700px]"
         />
+        <div className="flex justify-center items-center w-[360px] h-[218px] z-10 relative">
+          <img
+            src={contactHeroLines}
+            loading="lazy"
+            alt="Contact hero lines"
+            className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 z-10"
+          />
+          <div className="contact-hero-line-first absolute top-0 left-0 w-full h-1/2 z-20">
+            <div
+              className="animate-[lineAnimationLeft_8s_ease-in-out_infinite]"
+              style={{
+                animationDelay: "1s",
+              }}
+            ></div>
+          </div>
+          <div className="contact-hero-line-second absolute bottom-0 right-0 w-full h-1/2 z-30">
+            <div
+              className="animate-[lineAnimationRight_8s_ease-in-out_infinite]"
+              style={{
+                animationDelay: "1s",
+              }}
+            ></div>
+          </div>
+          <img
+            src={contactHeroHeart}
+            loading="lazy"
+            alt="Contact hero heart"
+            className="animate-[heartBeat_3.5s_ease_infinite] w-1/2 h-1/2 z-10"
+            style={{
+              animationIterationCount: "infinite",
+              animationTimingFunction: "linear",
+            }}
+          />
+        </div>
+        <div className="bg-[#ffffff0d] text-white rounded-full border border-[#ffffff0a] px-3 py-1">
+          <span className="font-medium text-md text-center text-white">
+            Contact
+          </span>
+        </div>
         <h1 className="font-bold xs:text-5xl xsm:text-6xl md:text-7xl text-white text-center xs:w-[90%] md:w-[70%]">
           We are here for you*
         </h1>
@@ -66,57 +103,6 @@ function Contact() {
         <span className="text-white/70 font-normal text-xs">
           Reach us on our social media platforms
         </span>
-        <div className="xs:w-full md:w-2/3 h-[250px] absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="relative w-full h-full">
-            <div
-              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-[10%] bottom-0 h-12 w-[1px] bg-white/50"
-              style={{
-                animationDelay: "3s",
-              }}
-            ></div>
-            <div
-              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-[20%] bottom-0 h-12 w-[1px] bg-white/50"
-              style={{
-                animationDelay: "5s",
-              }}
-            ></div>
-            <div
-              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute left-1/2 bottom-0 h-12 w-[1px] bg-white/50"
-              style={{
-                animationDelay: "5s",
-              }}
-            ></div>
-            <div
-              className="animate-[starlight_7s_ease-in-out_infinite] opacity-0 absolute right-[20%] bottom-0 h-12 w-[1px] bg-white/50"
-              style={{
-                animationDelay: "6s",
-              }}
-            ></div>
-          </div>
-        </div>
-        <div className="rising-stars xs:w-full md:w-2/3 h-[250px] absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div
-            className="animate-[rising_100s_ease-in-out_infinite] w-[2px] h-[2px]"
-            style={{
-              animationDuration: "100s",
-              animationFillMode: "forwards",
-            }}
-          ></div>
-          <div
-            className="animate-[rising_100s_ease-in-out_infinite] w-[1px] h-[1px]"
-            style={{
-              animationDuration: "150s",
-              animationFillMode: "forwards",
-            }}
-          ></div>
-          <div
-            className="animate-[rising_100s_ease-in-out_infinite] w-[1px] h-[1px]"
-            style={{
-              animationDuration: "200s",
-              animationFillMode: "forwards",
-            }}
-          ></div>
-        </div>
       </div>
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] my-10 z-10">
         <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-[#71717a] font-extrabold xs:text-3xl md:text-5xl text-center pb-1">
@@ -164,9 +150,6 @@ function Contact() {
             />
           </div>
         </div>
-      </div>
-      <div className="background-hero">
-        <div className="hero-gradient"></div>
       </div>
     </section>
   );

@@ -38,10 +38,10 @@ function Footer() {
             </div>
             <div className="group flex flex-row justify-center items-center gap-1">
               <Link
-                to="/skills"
+                to="/home"
                 className="text-[13px] font-semibold leading-6 text-[#65646b]"
               >
-                Skills
+                Home
               </Link>
               <HiArrowSmRight className="text-[#65646b] group-hover:translate-x-[3px] transition-all" />
             </div>

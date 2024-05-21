@@ -1,10 +1,9 @@
 import React from "react";
-import bgCircles from "../assets/images/bgCircles.svg";
 import { Link } from "react-router-dom";
 
 function NotFound() {
   return (
-    <section className="flex flex-col justify-center items-center min-h-screen relative">
+    <section className="flex flex-col justify-center items-center min-h-screen">
       <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] gap-5 z-10 relative overflow-visible">
         <span className="text-3xl text-white text-center">
           404 Not Found 😔
@@ -24,12 +23,6 @@ function NotFound() {
           404
         </span>
       </div>
-      <img
-        src={bgCircles}
-        alt="Bg circles"
-        loading="lazy"
-        className="absolute -top-6 -left-5 h-auto"
-      />
     </section>
   );
 }

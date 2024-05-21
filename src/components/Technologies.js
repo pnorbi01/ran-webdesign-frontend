@@ -14,11 +14,11 @@ import wave3 from "../assets/images/wave3.png";
 
 function Technologies() {
   return (
-    <section className="flex flex-col justify-center items-center w-full my-24 z-50">
-      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] z-10 space-y-10 py-5 relative">
+    <section className="flex flex-col justify-center items-center w-full my-24">
+      <div className="flex flex-col justify-center items-center xs:w-[90%] md:w-[80%] space-y-10 z-10 py-5 relative">
         <div className="flex flex-col justify-center items-center xs:W-full 2xl:w-1/2 space-y-5">
-          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#363541] px-2">
-            <span className="font-bold text-md text-center text-neutral-500">
+          <div className="bg-[#ffffff0d] text-white rounded-full border border-[#ffffff0a] px-3 py-1">
+            <span className="font-medium text-md text-center text-white">
               Technologies
             </span>
           </div>
@@ -30,13 +30,13 @@ function Technologies() {
         <div className="technologies-line-left absolute top-0 xl:left-0 2xl:left-[10%] w-[1px] h-[500px] xs:hidden xl:block"></div>
         <div className="technologies-line-right absolute top-0 xl:right-0 2xl:right-[10%] w-[1px] h-[500px] xs:hidden xl:block"></div>
       </div>
-      <div className="grid grid-cols-2 auto-rows-[15rem] w-full xl:w-1/2 h-[30rem] relative m-auto overflow-clip pt-[13.5px]">
+      <div className="grid grid-cols-2 auto-rows-[15rem] w-full xl:w-1/2 h-[30rem] relative m-auto overflow-clip pt-[13.5px] z-10">
         <div className="technologies-item flex flex-col xs:justify-end lg:justify-center xs:items-end lg:items-center xs:pr-10 xs:pb-10 lg:p-0 gap-3">
           <div className="p-1 xs:rounded-lg md:rounded-xl bg-[#58c4dc]">
             <ReactIcon size={20} color={"#FFF"} />
           </div>
           <span className="text-[#f4f0ff] text-center xs:hidden lg:block">
-            React Native
+            React Native & ReactJS
           </span>
           <span className="text-[#efedfdb3] text-center text-sm xs:hidden lg:block lg:w-1/2">
             Creating your dream on both iOS and Android platform.
@@ -60,7 +60,7 @@ function Technologies() {
             <PhpIcon size={20} color={"#efedfdb3"} />
           </div>
           <span className="text-[#f4f0ff] text-center xs:hidden lg:block">
-            Java and PHP
+            Java & PHP
           </span>
           <span className="text-[#efedfdb3] text-center text-sm xs:hidden lg:block lg:w-1/2">
             To make your project more secure than ever.
@@ -75,7 +75,7 @@ function Technologies() {
             </div>
           </div>
           <span className="text-[#f4f0ff] text-center xs:hidden lg:block">
-            TailwindCSS and NextUI
+            TailwindCSS & NextUI
           </span>
           <span className="text-[#efedfdb3] text-center text-sm xs:hidden lg:block lg:w-1/2">
             For intuitive and User-Friendly UI experience.
@@ -176,7 +176,7 @@ function Technologies() {
           </div>
           <div className="flex flex-col justify-start items-start gap-2">
             <span className="text-[#f4f0ff] xs:text-sm md:text-lg font-semibold">
-              React Native
+              React Native & ReactJS
             </span>
             <span className="text-[#efedfdb3] text-left xs:text-sm md:text-lg">
               Creating your dream on both iOS and Android platform.
@@ -204,7 +204,7 @@ function Technologies() {
           </div>
           <div className="flex flex-col justify-start items-start gap-2">
             <span className="text-[#f4f0ff] xs:text-sm md:text-lg font-semibold">
-              Java and PHP
+              Java & PHP
             </span>
             <span className="text-[#efedfdb3] text-left xs:text-sm md:text-lg">
               To make your project more secure than ever.
@@ -221,7 +221,7 @@ function Technologies() {
           </div>
           <div className="flex flex-col justify-start items-start gap-2">
             <span className="text-[#f4f0ff] xs:text-sm md:text-lg font-semibold">
-              TailwindCSS and NextUI
+              TailwindCSS & NextUI
             </span>
             <span className="text-[#efedfdb3] text-left xs:text-sm md:text-lg">
               For intuitive and User-Friendly UI experience.
